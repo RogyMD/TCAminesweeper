@@ -1,6 +1,6 @@
 ![App Icon](Assets/README/app_icon.png)
 
-## Minesweeper in SwiftUI
+## Minesweeper
 
 This project is a copy of the Windows game Minesweeper.
 
