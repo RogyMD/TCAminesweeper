@@ -1,0 +1,5 @@
+<MinefieldState: 
+grid: Grid<TileState>(rows: 2, columns: 2, content: [TileCore.TileState(id: 0, tile: 8, isHidden: true, isMarked: false), TileCore.TileState(id: 1, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 2, tile: 1, isHidden: true, isMarked: false), TileCore.TileState(id: 3, tile: 💣, isHidden: true, isMarked: false)])
+content: [TileCore.TileState(id: 0, tile: 8, isHidden: true, isMarked: false), TileCore.TileState(id: 1, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 2, tile: 1, isHidden: true, isMarked: false), TileCore.TileState(id: 3, tile: 💣, isHidden: true, isMarked: false)]
+gridInfo: <GridInfo: mines: [1, 3]; flagged: []; revealed: []
+result: nil>

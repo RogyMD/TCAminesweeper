@@ -1,0 +1,1 @@
+MinefieldAttributes(rows: 30, columns: 30, mines: 899)

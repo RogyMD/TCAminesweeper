@@ -1,0 +1,4631 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A53F39D62606BE37007DB76E /* GameCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5573F822600DE220098EBE4 /* GameCoreTests.swift */; };
+		A5497F922603F4BD00C5AD5B /* LiveNewGameEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5497F912603F4BD00C5AD5B /* LiveNewGameEnvironmentTests.swift */; };
+		A5497FAC2603FA0500C5AD5B /* GridTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5497FAB2603FA0500C5AD5B /* GridTests.swift */; };
+		A549804126040E3D00C5AD5B /* GridInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A549800F26040E2300C5AD5B /* GridInfo.swift */; };
+		A549809B26053BD900C5AD5B /* LiveHighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */; };
+		A54980EC26053C0B00C5AD5B /* LiveHighScoreServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5497F152603DDBB00C5AD5B /* LiveHighScoreServiceTests.swift */; };
+		A54981AF26053CED00C5AD5B /* LiveSettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */; };
+		A549821926053D1F00C5AD5B /* LiveSettingsServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5497F472603EF9100C5AD5B /* LiveSettingsServiceTests.swift */; };
+		A5573F852600DE220098EBE4 /* GameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC02325FE51C4001E57FA /* GameCore.framework */; };
+		A557403B260114670098EBE4 /* GameViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A557403A260114670098EBE4 /* GameViewTests.swift */; };
+		A557403D260114670098EBE4 /* GameView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC05925FE51CD001E57FA /* GameView.framework */; };
+		A568FB53260559F200475045 /* LiveMinefieldEnvironmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FB52260559F200475045 /* LiveMinefieldEnvironmentTests.swift */; };
+		A568FB7026055C0500475045 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A568FB6F26055C0500475045 /* SnapshotTesting */; };
+		A568FC2A26056BBB00475045 /* Grid+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FC2926056BBB00475045 /* Grid+String.swift */; };
+		A568FCE626057EA200475045 /* MinefieldStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FCE526057EA200475045 /* MinefieldStateTests.swift */; };
+		A568FD1C2605813A00475045 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = A568FD1B2605813A00475045 /* SnapshotTesting */; };
+		A568FD5C26062ECC00475045 /* SettingsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */; };
+		A568FE2026062FD300475045 /* SettingsCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FD5926062ECC00475045 /* SettingsCoreTests.swift */; };
+		A568FE3D260638D400475045 /* MinefieldAttributesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A568FE3C260638D400475045 /* MinefieldAttributesTests.swift */; };
+		A581A5D12606C2C30036E6AC /* Shuffler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A581A57E2606C0430036E6AC /* Shuffler.swift */; };
+		A590E20025FFAE0600019BF4 /* NewGameCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590E1FF25FFAE0600019BF4 /* NewGameCoreTests.swift */; };
+		A590E2D725FFC0D300019BF4 /* MinefieldCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC09125FE520E001E57FA /* MinefieldCore.framework */; };
+		A590E2F225FFC0E400019BF4 /* MinefieldCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A590E2F125FFC0DE00019BF4 /* MinefieldCoreTests.swift */; };
+		A5CCBEAB25FE5132001E57FA /* NewGameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBEA225FE5131001E57FA /* NewGameCore.framework */; };
+		A5CCBEB825FE5132001E57FA /* NewGameCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBEA225FE5131001E57FA /* NewGameCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBEE925FE514A001E57FA /* AppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBED325FE5149001E57FA /* AppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBF1725FE5155001E57FA /* AppView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF0125FE5155001E57FA /* AppView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBF4925FE5166001E57FA /* NewGameView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF3325FE5166001E57FA /* NewGameView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBF7525FE5181001E57FA /* SettingsCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBFA325FE5189001E57FA /* SettingsView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF8D25FE5188001E57FA /* SettingsView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCBFD325FE51AC001E57FA /* HighScoresCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC00525FE51B2001E57FA /* HighScoresView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBFEF25FE51B2001E57FA /* HighScoresView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC03925FE51C4001E57FA /* GameCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC02325FE51C4001E57FA /* GameCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC06F25FE51CE001E57FA /* GameView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC05925FE51CD001E57FA /* GameView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC0A725FE520E001E57FA /* MinefieldCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC09125FE520E001E57FA /* MinefieldCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC0E125FE521A001E57FA /* MinefieldView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC0CB25FE521A001E57FA /* MinefieldView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC11D25FE5248001E57FA /* TileCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC10725FE5247001E57FA /* TileCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC15B25FE524E001E57FA /* TileView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC14525FE524E001E57FA /* TileView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC19B25FE526D001E57FA /* TCAminesweeperCommon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC1DD25FE528F001E57FA /* HighScoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC22125FE529B001E57FA /* LiveHighScoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC2AF25FE52BA001E57FA /* LiveSettingsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC3A025FE645F001E57FA /* HighScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE41325F81EDC00212EB0 /* HighScoreService.swift */; };
+		A5CCC43F25FE64DE001E57FA /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5307B2525F538A100E70B9B /* Grid.swift */; };
+		A5CCC55825FE6560001E57FA /* LiveHighScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE41B25F82AD200212EB0 /* LiveHighScoreService.swift */; };
+		A5CCC5B725FE6585001E57FA /* HighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */; };
+		A5CCC5B825FE6585001E57FA /* HighScoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5CCC63925FE6769001E57FA /* TileCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596AB9825F2F02C00ED9252 /* TileCore.swift */; };
+		A5CCC96325FE8493001E57FA /* TCAminesweeperCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */; };
+		A5CCC98325FE84C9001E57FA /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596AB9D25F2F1AC00ED9252 /* TileView.swift */; };
+		A5CCC9A225FE84CE001E57FA /* TileViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5706F8725F16EDE003994BA /* TileViews.swift */; };
+		A5CCC9C125FE84D7001E57FA /* TileCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC10725FE5247001E57FA /* TileCore.framework */; };
+		A5CCC9E025FE8531001E57FA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5706F8D25F16F7A003994BA /* Colors.swift */; };
+		A5CCC9FF25FE85FB001E57FA /* MinefieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596AB8E25F2EC7100ED9252 /* MinefieldView.swift */; };
+		A5CCCA1E25FE8603001E57FA /* TileView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC14525FE524E001E57FA /* TileView.framework */; };
+		A5CCCA3D25FE8612001E57FA /* MinefieldCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC09125FE520E001E57FA /* MinefieldCore.framework */; };
+		A5CCCA5C25FE8676001E57FA /* MinefieldCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596AB9325F2EC9C00ED9252 /* MinefieldCore.swift */; };
+		A5CCCA7B25FE8696001E57FA /* TileCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC10725FE5247001E57FA /* TileCore.framework */; };
+		A5CCCA9A25FE86EE001E57FA /* GameCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596ABB725F3B88C00ED9252 /* GameCore.swift */; };
+		A5CCCAB925FE86F7001E57FA /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596ABC125F42FD500ED9252 /* GameView.swift */; };
+		A5CCCAD825FE86FF001E57FA /* MinefieldCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC09125FE520E001E57FA /* MinefieldCore.framework */; };
+		A5CCCAD925FE870A001E57FA /* MinefieldView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC0CB25FE521A001E57FA /* MinefieldView.framework */; };
+		A5CCCB1825FE877D001E57FA /* HeaderCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596ABA525F3B19400ED9252 /* HeaderCore.swift */; };
+		A5CCCB5525FE8A47001E57FA /* GameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC02325FE51C4001E57FA /* GameCore.framework */; };
+		A5CCCB7525FE8AFF001E57FA /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596ABB225F3B31800ED9252 /* Fonts.swift */; };
+		A5CCCB9425FE8FBC001E57FA /* HighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */; };
+		A5CCCB9525FE8FD1001E57FA /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE42525F84A8B00212EB0 /* HighScoreView.swift */; };
+		A5CCCBB425FE8FDA001E57FA /* HighScoresCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */; };
+		A5CCCBF125FE914C001E57FA /* HighScoreCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE42025F848FB00212EB0 /* HighScoreCore.swift */; };
+		A5CCCC8C25FE94CA001E57FA /* Difficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCCC4E25FE9434001E57FA /* Difficulty.swift */; };
+		A5CCCE5A25FE9BE4001E57FA /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = A5CCCE5925FE9BE4001E57FA /* ComposableArchitecture */; };
+		A5CCCE5B25FE9BEE001E57FA /* TCAminesweeperCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */; };
+		A5CCCE5C25FE9C06001E57FA /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A36F25F95CDC00E69C30 /* UserSettings.swift */; };
+		A5CCCED525FE9C1A001E57FA /* MinefieldAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A36725F95CC200E69C30 /* MinefieldAttributes.swift */; };
+		A5CCCF3025FE9D03001E57FA /* UserHighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A38425F97D3F00E69C30 /* UserHighScore.swift */; };
+		A5CCCF8D25FE9EAD001E57FA /* Difficulty+MinefieldAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCCF4F25FE9E9A001E57FA /* Difficulty+MinefieldAttributes.swift */; };
+		A5CCCFCB25FE9F0B001E57FA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE39025F67EE900212EB0 /* SettingsView.swift */; };
+		A5CCCFEA25FE9F12001E57FA /* SettingsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */; };
+		A5CCD04725FE9F50001E57FA /* MinefieldAttributes+Normalize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCD00925FE9F38001E57FA /* MinefieldAttributes+Normalize.swift */; };
+		A5CCD0C025FEA142001E57FA /* SettingsCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE38B25F67ACB00212EB0 /* SettingsCore.swift */; };
+		A5CEBC7E25EFF4D60013EA06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */; };
+		A5CEBCAE25EFF5920013EA06 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */; };
+		A5D02CEB26028E8D0004D542 /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBED325FE5149001E57FA /* AppCore.framework */; };
+		A5D02D4D26028EA60004D542 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE5B25FD41E2001E57FA /* AppCore.swift */; };
+		A5D02DAA26028EFF0004D542 /* AppCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D02CE826028E8D0004D542 /* AppCoreTests.swift */; };
+		A5E27D6325FEADF9008F55DB /* LiveSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A37725F9600E00E69C30 /* LiveSettingsService.swift */; };
+		A5E27E8125FEAEE0008F55DB /* SettingsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A5E27E7925FEAEE0008F55DB /* SettingsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A5E27EA325FEAEE9008F55DB /* SettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A35A25F9598700E69C30 /* SettingsService.swift */; };
+		A5E27EC225FEAF08008F55DB /* TCAminesweeperCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */; };
+		A5E27F1D25FEB36C008F55DB /* SettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E27E7925FEAEE0008F55DB /* SettingsService.framework */; };
+		A5E27FE625FEB5A9008F55DB /* SettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E27E7925FEAEE0008F55DB /* SettingsService.framework */; };
+		A5E2800525FEB708008F55DB /* GameView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC05925FE51CD001E57FA /* GameView.framework */; };
+		A5E2800625FEB728008F55DB /* GameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC02325FE51C4001E57FA /* GameCore.framework */; };
+		A5E2800725FEB73D008F55DB /* NewGameCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE39525F69B9F00212EB0 /* NewGameCore.swift */; };
+		A5E2802625FEB7C6008F55DB /* SettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E27E7925FEAEE0008F55DB /* SettingsService.framework */; };
+		A5E2802725FEB7CE008F55DB /* HighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */; };
+		A5E2804625FEB803008F55DB /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE39A25F6A7CA00212EB0 /* NewGameView.swift */; };
+		A5E2806525FEB80B008F55DB /* NewGameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBEA225FE5131001E57FA /* NewGameCore.framework */; };
+		A5E2808425FEB8AD008F55DB /* TextAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE40D25F81E5D00212EB0 /* TextAlert.swift */; };
+		A5E280A325FEBAE7008F55DB /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE5B25FD41E2001E57FA /* AppCore.swift */; };
+		A5E280C225FEBB67008F55DB /* SettingsCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */; };
+		A5E280C525FEBB7A008F55DB /* NewGameCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBEA225FE5131001E57FA /* NewGameCore.framework */; };
+		A5E280C625FEBB9D008F55DB /* HighScoresCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */; };
+		A5E280E525FEBCC2008F55DB /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE6625FD48A9001E57FA /* AppView.swift */; };
+		A5E2810425FEBCCC008F55DB /* AppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBED325FE5149001E57FA /* AppCore.framework */; };
+		A5E2810525FEBCE3008F55DB /* SettingsView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF8D25FE5188001E57FA /* SettingsView.framework */; };
+		A5E2810625FEBCE8008F55DB /* HighScoresView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBFEF25FE51B2001E57FA /* HighScoresView.framework */; };
+		A5E2812525FEBD2A008F55DB /* NewGameView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF3325FE5166001E57FA /* NewGameView.framework */; };
+		A5E281A025FEBE0D008F55DB /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E2814425FEBD56008F55DB /* RootView.swift */; };
+		A5E281BF25FEBE12008F55DB /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE6625FD48A9001E57FA /* AppView.swift */; };
+		A5E281DE25FEBE1B008F55DB /* TCAminesweeperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CEBC7925EFF4D30013EA06 /* TCAminesweeperApp.swift */; };
+		A5E281FD25FEBE26008F55DB /* AppView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCBF0125FE5155001E57FA /* AppView.framework */; };
+		A5E281FE25FEBE78008F55DB /* LiveHighScoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59FE41B25F82AD200212EB0 /* LiveHighScoreService.swift */; };
+		A5E281FF25FEBE78008F55DB /* LiveSettingsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A37725F9600E00E69C30 /* LiveSettingsService.swift */; };
+		A5E2820025FEBE78008F55DB /* LiveMinefieldEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A33A25F93CF200E69C30 /* LiveMinefieldEnvironment.swift */; };
+		A5E2820125FEBE78008F55DB /* LiveGameEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A34525F9480000E69C30 /* LiveGameEnvironment.swift */; };
+		A5E2820225FEBE78008F55DB /* LiveNewGameEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A34A25F9482800E69C30 /* LiveNewGameEnvironment.swift */; };
+		A5E2820325FEBE78008F55DB /* LiveHighScoreEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A35225F94B3800E69C30 /* LiveHighScoreEnvironment.swift */; };
+		A5E2820425FEBE78008F55DB /* LiveSettingsEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A512A37F25F966AC00E69C30 /* LiveSettingsEnvironment.swift */; };
+		A5E2820525FEBE78008F55DB /* LiveAppEnvirontment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE6E25FD6E73001E57FA /* LiveAppEnvirontment.swift */; };
+		A5E2822425FEBEA3008F55DB /* LiveHighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */; };
+		A5E2822525FEBEA3008F55DB /* LiveSettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5497EC82603DD7000C5AD5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CEBC7525EFF4D30013EA06;
+			remoteInfo = TCAminesweeper;
+		};
+		A549809C26053BD900C5AD5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC20A25FE529B001E57FA;
+			remoteInfo = LiveHighScoreService;
+		};
+		A549823426053D5200C5AD5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC2A625FE52BA001E57FA;
+			remoteInfo = LiveSettingsService;
+		};
+		A5573F862600DE220098EBE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC02225FE51C4001E57FA;
+			remoteInfo = GameCore;
+		};
+		A557403E260114670098EBE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC05825FE51CD001E57FA;
+			remoteInfo = GameView;
+		};
+		A568FB8B26056A3600475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC18425FE526C001E57FA;
+			remoteInfo = TCAminesweeperCommon;
+		};
+		A568FB8D26056A3D00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC10625FE5247001E57FA;
+			remoteInfo = TileCore;
+		};
+		A568FB8F26056A4500475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC18425FE526C001E57FA;
+			remoteInfo = TCAminesweeperCommon;
+		};
+		A568FB9126056A4F00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC18425FE526C001E57FA;
+			remoteInfo = TCAminesweeperCommon;
+		};
+		A568FB9326056A5E00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E27E7825FEAEE0008F55DB;
+			remoteInfo = SettingsService;
+		};
+		A568FB9526056A8500475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC09025FE520E001E57FA;
+			remoteInfo = MinefieldCore;
+		};
+		A568FB9726056A8A00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC14425FE524E001E57FA;
+			remoteInfo = TileView;
+		};
+		A568FB9926056A9300475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC10625FE5247001E57FA;
+			remoteInfo = TileCore;
+		};
+		A568FB9B26056A9C00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC02225FE51C4001E57FA;
+			remoteInfo = GameCore;
+		};
+		A568FB9D26056AA200475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC0CA25FE521A001E57FA;
+			remoteInfo = MinefieldView;
+		};
+		A568FB9F26056AAA00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC09025FE520E001E57FA;
+			remoteInfo = MinefieldCore;
+		};
+		A568FBA126056AB200475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBFBC25FE51AB001E57FA;
+			remoteInfo = HighScoresCore;
+		};
+		A568FBA326056ABB00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC1C625FE528E001E57FA;
+			remoteInfo = HighScoreService;
+		};
+		A568FBA526056AC100475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF5E25FE5181001E57FA;
+			remoteInfo = SettingsCore;
+		};
+		A568FBA726056AC800475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E27E7825FEAEE0008F55DB;
+			remoteInfo = SettingsService;
+		};
+		A568FBA926056AD000475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBEA125FE5131001E57FA;
+			remoteInfo = NewGameCore;
+		};
+		A568FBAB26056AD500475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC05825FE51CD001E57FA;
+			remoteInfo = GameView;
+		};
+		A568FBAD26056AE300475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC1C625FE528E001E57FA;
+			remoteInfo = HighScoreService;
+		};
+		A568FBAF26056B0D00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC02225FE51C4001E57FA;
+			remoteInfo = GameCore;
+		};
+		A568FBCB26056B2800475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF3225FE5166001E57FA;
+			remoteInfo = NewGameView;
+		};
+		A568FBCD26056B3000475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBFEE25FE51B2001E57FA;
+			remoteInfo = HighScoresView;
+		};
+		A568FBCF26056B3400475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBED225FE5149001E57FA;
+			remoteInfo = AppCore;
+		};
+		A568FBD126056B3900475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF8C25FE5188001E57FA;
+			remoteInfo = SettingsView;
+		};
+		A568FBD326056B4500475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBFBC25FE51AB001E57FA;
+			remoteInfo = HighScoresCore;
+		};
+		A568FBD526056B4C00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBEA125FE5131001E57FA;
+			remoteInfo = NewGameCore;
+		};
+		A568FBD726056B5400475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF5E25FE5181001E57FA;
+			remoteInfo = SettingsCore;
+		};
+		A568FC2726056B9400475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC10625FE5247001E57FA;
+			remoteInfo = TileCore;
+		};
+		A568FD5D26062ECC00475045 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF5E25FE5181001E57FA;
+			remoteInfo = SettingsCore;
+		};
+		A590E2D825FFC0D300019BF4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC09025FE520E001E57FA;
+			remoteInfo = MinefieldCore;
+		};
+		A5CCBEAC25FE5132001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBEA125FE5131001E57FA;
+			remoteInfo = NewGameCore;
+		};
+		A5CCBEB525FE5132001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBEA125FE5131001E57FA;
+			remoteInfo = NewGameCore;
+		};
+		A5CCBEE625FE514A001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBED225FE5149001E57FA;
+			remoteInfo = AppCore;
+		};
+		A5CCBF1425FE5155001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF0025FE5155001E57FA;
+			remoteInfo = AppView;
+		};
+		A5CCBF4625FE5166001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF3225FE5166001E57FA;
+			remoteInfo = NewGameView;
+		};
+		A5CCBF7225FE5181001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF5E25FE5181001E57FA;
+			remoteInfo = SettingsCore;
+		};
+		A5CCBFA025FE5189001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBF8C25FE5188001E57FA;
+			remoteInfo = SettingsView;
+		};
+		A5CCBFD025FE51AC001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBFBC25FE51AB001E57FA;
+			remoteInfo = HighScoresCore;
+		};
+		A5CCC00225FE51B2001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBFEE25FE51B2001E57FA;
+			remoteInfo = HighScoresView;
+		};
+		A5CCC03625FE51C4001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC02225FE51C4001E57FA;
+			remoteInfo = GameCore;
+		};
+		A5CCC06C25FE51CE001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC05825FE51CD001E57FA;
+			remoteInfo = GameView;
+		};
+		A5CCC0A425FE520E001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC09025FE520E001E57FA;
+			remoteInfo = MinefieldCore;
+		};
+		A5CCC0DE25FE521A001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC0CA25FE521A001E57FA;
+			remoteInfo = MinefieldView;
+		};
+		A5CCC15825FE524E001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC14425FE524E001E57FA;
+			remoteInfo = TileView;
+		};
+		A5CCC19825FE526D001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC18425FE526C001E57FA;
+			remoteInfo = TCAminesweeperCommon;
+		};
+		A5CCC1DA25FE528F001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC1C625FE528E001E57FA;
+			remoteInfo = HighScoreService;
+		};
+		A5CCC21E25FE529B001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC20A25FE529B001E57FA;
+			remoteInfo = LiveHighScoreService;
+		};
+		A5CCC2AC25FE52BA001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC2A625FE52BA001E57FA;
+			remoteInfo = LiveSettingsService;
+		};
+		A5CCC5B925FE6585001E57FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCC1C625FE528E001E57FA;
+			remoteInfo = HighScoreService;
+		};
+		A5D02CEC26028E8D0004D542 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5CCBED225FE5149001E57FA;
+			remoteInfo = AppCore;
+		};
+		A5E27E7E25FEAEE0008F55DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5E27E7825FEAEE0008F55DB;
+			remoteInfo = SettingsService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A5CCBE8425FE50DA001E57FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5CCBFD325FE51AC001E57FA /* HighScoresCore.framework in Embed Frameworks */,
+				A5CCBF4925FE5166001E57FA /* NewGameView.framework in Embed Frameworks */,
+				A5CCBF1725FE5155001E57FA /* AppView.framework in Embed Frameworks */,
+				A5CCC22125FE529B001E57FA /* LiveHighScoreService.framework in Embed Frameworks */,
+				A5CCC1DD25FE528F001E57FA /* HighScoreService.framework in Embed Frameworks */,
+				A5CCC03925FE51C4001E57FA /* GameCore.framework in Embed Frameworks */,
+				A5CCBFA325FE5189001E57FA /* SettingsView.framework in Embed Frameworks */,
+				A5E27E8125FEAEE0008F55DB /* SettingsService.framework in Embed Frameworks */,
+				A5CCC15B25FE524E001E57FA /* TileView.framework in Embed Frameworks */,
+				A5CCC11D25FE5248001E57FA /* TileCore.framework in Embed Frameworks */,
+				A5CCBEB825FE5132001E57FA /* NewGameCore.framework in Embed Frameworks */,
+				A5CCBEE925FE514A001E57FA /* AppCore.framework in Embed Frameworks */,
+				A5CCC19B25FE526D001E57FA /* TCAminesweeperCommon.framework in Embed Frameworks */,
+				A5CCC2AF25FE52BA001E57FA /* LiveSettingsService.framework in Embed Frameworks */,
+				A5CCC00525FE51B2001E57FA /* HighScoresView.framework in Embed Frameworks */,
+				A5CCC0A725FE520E001E57FA /* MinefieldCore.framework in Embed Frameworks */,
+				A5CCBF7525FE5181001E57FA /* SettingsCore.framework in Embed Frameworks */,
+				A5CCC06F25FE51CE001E57FA /* GameView.framework in Embed Frameworks */,
+				A5CCC0E125FE521A001E57FA /* MinefieldView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC5BB25FE6585001E57FA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A5CCC5B825FE6585001E57FA /* HighScoreService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A512A33A25F93CF200E69C30 /* LiveMinefieldEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMinefieldEnvironment.swift; sourceTree = "<group>"; };
+		A512A34525F9480000E69C30 /* LiveGameEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveGameEnvironment.swift; sourceTree = "<group>"; };
+		A512A34A25F9482800E69C30 /* LiveNewGameEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewGameEnvironment.swift; sourceTree = "<group>"; };
+		A512A35225F94B3800E69C30 /* LiveHighScoreEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHighScoreEnvironment.swift; sourceTree = "<group>"; };
+		A512A35A25F9598700E69C30 /* SettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsService.swift; sourceTree = "<group>"; };
+		A512A36725F95CC200E69C30 /* MinefieldAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldAttributes.swift; sourceTree = "<group>"; };
+		A512A36F25F95CDC00E69C30 /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		A512A37725F9600E00E69C30 /* LiveSettingsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSettingsService.swift; sourceTree = "<group>"; };
+		A512A37F25F966AC00E69C30 /* LiveSettingsEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSettingsEnvironment.swift; sourceTree = "<group>"; };
+		A512A38425F97D3F00E69C30 /* UserHighScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHighScore.swift; sourceTree = "<group>"; };
+		A5307B2525F538A100E70B9B /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		A5497EC32603DD7000C5AD5B /* TCAminesweeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAminesweeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5497F152603DDBB00C5AD5B /* LiveHighScoreServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHighScoreServiceTests.swift; sourceTree = "<group>"; };
+		A5497F472603EF9100C5AD5B /* LiveSettingsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSettingsServiceTests.swift; sourceTree = "<group>"; };
+		A5497F912603F4BD00C5AD5B /* LiveNewGameEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveNewGameEnvironmentTests.swift; sourceTree = "<group>"; };
+		A5497FAB2603FA0500C5AD5B /* GridTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridTests.swift; sourceTree = "<group>"; };
+		A549800F26040E2300C5AD5B /* GridInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridInfo.swift; sourceTree = "<group>"; };
+		A549809626053BD900C5AD5B /* LiveHighScoreServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveHighScoreServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A549813C26053CBD00C5AD5B /* LiveSettingsServiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveSettingsServiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5573F802600DE220098EBE4 /* GameCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5573F822600DE220098EBE4 /* GameCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCoreTests.swift; sourceTree = "<group>"; };
+		A5574038260114670098EBE4 /* GameViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A557403A260114670098EBE4 /* GameViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewTests.swift; sourceTree = "<group>"; };
+		A568FB52260559F200475045 /* LiveMinefieldEnvironmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveMinefieldEnvironmentTests.swift; sourceTree = "<group>"; };
+		A568FC2926056BBB00475045 /* Grid+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grid+String.swift"; sourceTree = "<group>"; };
+		A568FCE526057EA200475045 /* MinefieldStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldStateTests.swift; sourceTree = "<group>"; };
+		A568FD5726062ECC00475045 /* SettingsCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SettingsCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A568FD5926062ECC00475045 /* SettingsCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoreTests.swift; sourceTree = "<group>"; };
+		A568FE3C260638D400475045 /* MinefieldAttributesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldAttributesTests.swift; sourceTree = "<group>"; };
+		A5706F8725F16EDE003994BA /* TileViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViews.swift; sourceTree = "<group>"; };
+		A5706F8D25F16F7A003994BA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		A581A57E2606C0430036E6AC /* Shuffler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shuffler.swift; sourceTree = "<group>"; };
+		A581A5EE26076BD50036E6AC /* AllTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = AllTests.xctestplan; sourceTree = "<group>"; };
+		A590E1FF25FFAE0600019BF4 /* NewGameCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameCoreTests.swift; sourceTree = "<group>"; };
+		A590E2D225FFC0D300019BF4 /* MinefieldCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinefieldCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A590E2F125FFC0DE00019BF4 /* MinefieldCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldCoreTests.swift; sourceTree = "<group>"; };
+		A596AB8E25F2EC7100ED9252 /* MinefieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldView.swift; sourceTree = "<group>"; };
+		A596AB9325F2EC9C00ED9252 /* MinefieldCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinefieldCore.swift; sourceTree = "<group>"; };
+		A596AB9825F2F02C00ED9252 /* TileCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileCore.swift; sourceTree = "<group>"; };
+		A596AB9D25F2F1AC00ED9252 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		A596ABA525F3B19400ED9252 /* HeaderCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCore.swift; sourceTree = "<group>"; };
+		A596ABB225F3B31800ED9252 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		A596ABB725F3B88C00ED9252 /* GameCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCore.swift; sourceTree = "<group>"; };
+		A596ABC125F42FD500ED9252 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		A59FE38B25F67ACB00212EB0 /* SettingsCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCore.swift; sourceTree = "<group>"; };
+		A59FE39025F67EE900212EB0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A59FE39525F69B9F00212EB0 /* NewGameCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameCore.swift; sourceTree = "<group>"; };
+		A59FE39A25F6A7CA00212EB0 /* NewGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
+		A59FE40D25F81E5D00212EB0 /* TextAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlert.swift; sourceTree = "<group>"; };
+		A59FE41325F81EDC00212EB0 /* HighScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreService.swift; sourceTree = "<group>"; };
+		A59FE41B25F82AD200212EB0 /* LiveHighScoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveHighScoreService.swift; sourceTree = "<group>"; };
+		A59FE42025F848FB00212EB0 /* HighScoreCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreCore.swift; sourceTree = "<group>"; };
+		A59FE42525F84A8B00212EB0 /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
+		A5CCBE5B25FD41E2001E57FA /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		A5CCBE6625FD48A9001E57FA /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		A5CCBE6E25FD6E73001E57FA /* LiveAppEnvirontment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveAppEnvirontment.swift; sourceTree = "<group>"; };
+		A5CCBEA225FE5131001E57FA /* NewGameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewGameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBEAA25FE5132001E57FA /* NewGameCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewGameCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBED325FE5149001E57FA /* AppCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBF0125FE5155001E57FA /* AppView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBF3325FE5166001E57FA /* NewGameView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewGameView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBF8D25FE5188001E57FA /* SettingsView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HighScoresCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCBFEF25FE51B2001E57FA /* HighScoresView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HighScoresView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC02325FE51C4001E57FA /* GameCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GameCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC05925FE51CD001E57FA /* GameView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GameView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC09125FE520E001E57FA /* MinefieldCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MinefieldCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC0CB25FE521A001E57FA /* MinefieldView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MinefieldView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC10725FE5247001E57FA /* TileCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TileCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC14525FE524E001E57FA /* TileView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TileView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TCAminesweeperCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC1C725FE528E001E57FA /* HighScoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HighScoreService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveHighScoreService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LiveSettingsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CCCC4E25FE9434001E57FA /* Difficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Difficulty.swift; sourceTree = "<group>"; };
+		A5CCCF4F25FE9E9A001E57FA /* Difficulty+MinefieldAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Difficulty+MinefieldAttributes.swift"; sourceTree = "<group>"; };
+		A5CCD00925FE9F38001E57FA /* MinefieldAttributes+Normalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MinefieldAttributes+Normalize.swift"; sourceTree = "<group>"; };
+		A5CEBC7625EFF4D30013EA06 /* TCAminesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAminesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5CEBC7925EFF4D30013EA06 /* TCAminesweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAminesweeperApp.swift; sourceTree = "<group>"; };
+		A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		A5CEBC8225EFF4D60013EA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Assets/Colors.xcassets; sourceTree = "<group>"; };
+		A5D02CE626028E8C0004D542 /* AppCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5D02CE826028E8D0004D542 /* AppCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreTests.swift; sourceTree = "<group>"; };
+		A5E27E7925FEAEE0008F55DB /* SettingsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E2814425FEBD56008F55DB /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5497EC02603DD7000C5AD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568FB7026055C0500475045 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549809326053BD900C5AD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A549809B26053BD900C5AD5B /* LiveHighScoreService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549813926053CBD00C5AD5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54981AF26053CED00C5AD5B /* LiveSettingsService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5573F7D2600DE220098EBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5573F852600DE220098EBE4 /* GameCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5574035260114670098EBE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A557403D260114670098EBE4 /* GameView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A568FD5426062ECC00475045 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568FD5C26062ECC00475045 /* SettingsCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590E2CF25FFC0D300019BF4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590E2D725FFC0D300019BF4 /* MinefieldCore.framework in Frameworks */,
+				A568FD1C2605813A00475045 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBE9F25FE5131001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2802725FEB7CE008F55DB /* HighScoreService.framework in Frameworks */,
+				A5E2802625FEB7C6008F55DB /* SettingsService.framework in Frameworks */,
+				A5E2800625FEB728008F55DB /* GameCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEA725FE5132001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCBEAB25FE5132001E57FA /* NewGameCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBED025FE5149001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E280C625FEBB9D008F55DB /* HighScoresCore.framework in Frameworks */,
+				A5E280C525FEBB7A008F55DB /* NewGameCore.framework in Frameworks */,
+				A5E280C225FEBB67008F55DB /* SettingsCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEFE25FE5155001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2812525FEBD2A008F55DB /* NewGameView.framework in Frameworks */,
+				A5E2810625FEBCE8008F55DB /* HighScoresView.framework in Frameworks */,
+				A5E2810525FEBCE3008F55DB /* SettingsView.framework in Frameworks */,
+				A5E2810425FEBCCC008F55DB /* AppCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF3025FE5166001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2806525FEB80B008F55DB /* NewGameCore.framework in Frameworks */,
+				A5E2800525FEB708008F55DB /* GameView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF5C25FE5181001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E27FE625FEB5A9008F55DB /* SettingsService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF8A25FE5188001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCFEA25FE9F12001E57FA /* SettingsCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFBA25FE51AB001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCB9425FE8FBC001E57FA /* HighScoreService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFEC25FE51B2001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCBB425FE8FDA001E57FA /* HighScoresCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC02025FE51C4001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCAD825FE86FF001E57FA /* MinefieldCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC05625FE51CD001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCB5525FE8A47001E57FA /* GameCore.framework in Frameworks */,
+				A5CCCAD925FE870A001E57FA /* MinefieldView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC08E25FE520E001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCA7B25FE8696001E57FA /* TileCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC0C825FE521A001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCA3D25FE8612001E57FA /* MinefieldCore.framework in Frameworks */,
+				A5CCCA1E25FE8603001E57FA /* TileView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC10425FE5247001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC96325FE8493001E57FA /* TCAminesweeperCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC14225FE524E001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC9C125FE84D7001E57FA /* TileCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC18225FE526C001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCE5A25FE9BE4001E57FA /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC1C425FE528E001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCE5B25FE9BEE001E57FA /* TCAminesweeperCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC20825FE529B001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC5B725FE6585001E57FA /* HighScoreService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC2A425FE52BA001E57FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E27F1D25FEB36C008F55DB /* SettingsService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CEBC7325EFF4D30013EA06 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2822425FEBEA3008F55DB /* LiveHighScoreService.framework in Frameworks */,
+				A5E2822525FEBEA3008F55DB /* LiveSettingsService.framework in Frameworks */,
+				A5E281FD25FEBE26008F55DB /* AppView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D02CE326028E8C0004D542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D02CEB26028E8D0004D542 /* AppCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E27E7625FEAEE0008F55DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E27EC225FEAF08008F55DB /* TCAminesweeperCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A512A33925F93C0C00E69C30 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCBE6E25FD6E73001E57FA /* LiveAppEnvirontment.swift */,
+				A512A35225F94B3800E69C30 /* LiveHighScoreEnvironment.swift */,
+				A512A37F25F966AC00E69C30 /* LiveSettingsEnvironment.swift */,
+				A512A34A25F9482800E69C30 /* LiveNewGameEnvironment.swift */,
+				A512A33A25F93CF200E69C30 /* LiveMinefieldEnvironment.swift */,
+				A512A34525F9480000E69C30 /* LiveGameEnvironment.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		A512A35F25F9599800E69C30 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				A59FE41B25F82AD200212EB0 /* LiveHighScoreService.swift */,
+				A512A37725F9600E00E69C30 /* LiveSettingsService.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		A512A36625F95CB300E69C30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCCC4E25FE9434001E57FA /* Difficulty.swift */,
+				A5307B2525F538A100E70B9B /* Grid.swift */,
+				A512A36725F95CC200E69C30 /* MinefieldAttributes.swift */,
+				A512A38425F97D3F00E69C30 /* UserHighScore.swift */,
+				A512A36F25F95CDC00E69C30 /* UserSettings.swift */,
+				A549800F26040E2300C5AD5B /* GridInfo.swift */,
+				A581A57E2606C0430036E6AC /* Shuffler.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5497E3A2603DCF900C5AD5B /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				A5497FAB2603FA0500C5AD5B /* GridTests.swift */,
+				A5497F152603DDBB00C5AD5B /* LiveHighScoreServiceTests.swift */,
+				A568FB52260559F200475045 /* LiveMinefieldEnvironmentTests.swift */,
+				A5497F912603F4BD00C5AD5B /* LiveNewGameEnvironmentTests.swift */,
+				A5497F472603EF9100C5AD5B /* LiveSettingsServiceTests.swift */,
+				A568FE3C260638D400475045 /* MinefieldAttributesTests.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		A5706F8C25F16F5D003994BA /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A5706F8D25F16F7A003994BA /* Colors.swift */,
+				A596ABB225F3B31800ED9252 /* Fonts.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A581A5ED26076BBA0036E6AC /* TestPlans */ = {
+			isa = PBXGroup;
+			children = (
+				A581A5EE26076BD50036E6AC /* AllTests.xctestplan */,
+			);
+			path = TestPlans;
+			sourceTree = "<group>";
+		};
+		A590E14625FFAD1E00019BF4 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A512A33925F93C0C00E69C30 /* Live */,
+				A512A36625F95CB300E69C30 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A59FE41225F81EC000212EB0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A512A35F25F9599800E69C30 /* Live */,
+				A59FE41325F81EDC00212EB0 /* HighScoreService.swift */,
+				A512A35A25F9598700E69C30 /* SettingsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A5CCC45F25FE6501001E57FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5CCC67225FE6934001E57FA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCCF4F25FE9E9A001E57FA /* Difficulty+MinefieldAttributes.swift */,
+				A5CCD00925FE9F38001E57FA /* MinefieldAttributes+Normalize.swift */,
+				A568FC2926056BBB00475045 /* Grid+String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5CEBC6D25EFF4D30013EA06 = {
+			isa = PBXGroup;
+			children = (
+				A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */,
+				A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */,
+				A5CEBC8225EFF4D60013EA06 /* Info.plist */,
+				A5CEBC7825EFF4D30013EA06 /* TCAminesweeper */,
+				A5CEBC8A25EFF4D60013EA06 /* Tests */,
+				A5CEBC7725EFF4D30013EA06 /* Products */,
+				A5CCC45F25FE6501001E57FA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5CEBC7725EFF4D30013EA06 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5CEBC7625EFF4D30013EA06 /* TCAminesweeper.app */,
+				A5CCBEA225FE5131001E57FA /* NewGameCore.framework */,
+				A5CCBEAA25FE5132001E57FA /* NewGameCoreTests.xctest */,
+				A5CCBED325FE5149001E57FA /* AppCore.framework */,
+				A5CCBF0125FE5155001E57FA /* AppView.framework */,
+				A5CCBF3325FE5166001E57FA /* NewGameView.framework */,
+				A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */,
+				A5CCBF8D25FE5188001E57FA /* SettingsView.framework */,
+				A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */,
+				A5CCBFEF25FE51B2001E57FA /* HighScoresView.framework */,
+				A5CCC02325FE51C4001E57FA /* GameCore.framework */,
+				A5CCC05925FE51CD001E57FA /* GameView.framework */,
+				A5CCC09125FE520E001E57FA /* MinefieldCore.framework */,
+				A5CCC0CB25FE521A001E57FA /* MinefieldView.framework */,
+				A5CCC10725FE5247001E57FA /* TileCore.framework */,
+				A5CCC14525FE524E001E57FA /* TileView.framework */,
+				A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */,
+				A5CCC1C725FE528E001E57FA /* HighScoreService.framework */,
+				A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */,
+				A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */,
+				A5E27E7925FEAEE0008F55DB /* SettingsService.framework */,
+				A590E2D225FFC0D300019BF4 /* MinefieldCoreTests.xctest */,
+				A5573F802600DE220098EBE4 /* GameCoreTests.xctest */,
+				A5574038260114670098EBE4 /* GameViewTests.xctest */,
+				A5D02CE626028E8C0004D542 /* AppCoreTests.xctest */,
+				A5497EC32603DD7000C5AD5B /* TCAminesweeperTests.xctest */,
+				A549809626053BD900C5AD5B /* LiveHighScoreServiceTests.xctest */,
+				A549813C26053CBD00C5AD5B /* LiveSettingsServiceTests.xctest */,
+				A568FD5726062ECC00475045 /* SettingsCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5CEBC7825EFF4D30013EA06 /* TCAminesweeper */ = {
+			isa = PBXGroup;
+			children = (
+				A5CEBC7925EFF4D30013EA06 /* TCAminesweeperApp.swift */,
+				A590E14625FFAD1E00019BF4 /* Common */,
+				A5706F8C25F16F5D003994BA /* Constants */,
+				A5CEBCB225EFF5F90013EA06 /* Core */,
+				A5CCC67225FE6934001E57FA /* Extensions */,
+				A59FE41225F81EC000212EB0 /* Services */,
+				A5CEBCB425EFF9EA0013EA06 /* SwiftUIViews */,
+				A5CEBCB325EFF9DE0013EA06 /* Views */,
+			);
+			path = TCAminesweeper;
+			sourceTree = "<group>";
+		};
+		A5CEBC8A25EFF4D60013EA06 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A5497E3A2603DCF900C5AD5B /* Live */,
+				A5D02CE826028E8D0004D542 /* AppCoreTests.swift */,
+				A5573F822600DE220098EBE4 /* GameCoreTests.swift */,
+				A557403A260114670098EBE4 /* GameViewTests.swift */,
+				A590E2F125FFC0DE00019BF4 /* MinefieldCoreTests.swift */,
+				A568FCE526057EA200475045 /* MinefieldStateTests.swift */,
+				A590E1FF25FFAE0600019BF4 /* NewGameCoreTests.swift */,
+				A568FD5926062ECC00475045 /* SettingsCoreTests.swift */,
+				A581A5ED26076BBA0036E6AC /* TestPlans */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		A5CEBCB225EFF5F90013EA06 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCBE5B25FD41E2001E57FA /* AppCore.swift */,
+				A596ABB725F3B88C00ED9252 /* GameCore.swift */,
+				A596ABA525F3B19400ED9252 /* HeaderCore.swift */,
+				A59FE42025F848FB00212EB0 /* HighScoreCore.swift */,
+				A596AB9325F2EC9C00ED9252 /* MinefieldCore.swift */,
+				A59FE39525F69B9F00212EB0 /* NewGameCore.swift */,
+				A59FE38B25F67ACB00212EB0 /* SettingsCore.swift */,
+				A596AB9825F2F02C00ED9252 /* TileCore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A5CEBCB325EFF9DE0013EA06 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A5CCBE6625FD48A9001E57FA /* AppView.swift */,
+				A596ABC125F42FD500ED9252 /* GameView.swift */,
+				A59FE42525F84A8B00212EB0 /* HighScoreView.swift */,
+				A596AB8E25F2EC7100ED9252 /* MinefieldView.swift */,
+				A59FE39A25F6A7CA00212EB0 /* NewGameView.swift */,
+				A5E2814425FEBD56008F55DB /* RootView.swift */,
+				A59FE39025F67EE900212EB0 /* SettingsView.swift */,
+				A596AB9D25F2F1AC00ED9252 /* TileView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A5CEBCB425EFF9EA0013EA06 /* SwiftUIViews */ = {
+			isa = PBXGroup;
+			children = (
+				A5706F8725F16EDE003994BA /* TileViews.swift */,
+				A59FE40D25F81E5D00212EB0 /* TextAlert.swift */,
+			);
+			path = SwiftUIViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		A5CCBE9D25FE5131001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBECE25FE5149001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEFC25FE5155001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF2E25FE5166001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF5A25FE5181001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF8825FE5188001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFB825FE51AB001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFEA25FE51B2001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC01E25FE51C4001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC05425FE51CD001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC08C25FE520E001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC0C625FE521A001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC10225FE5247001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC14025FE524E001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC18025FE526C001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC1C225FE528E001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC20625FE529B001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC2A225FE52BA001E57FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E27E7425FEAEE0008F55DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A5497EC22603DD7000C5AD5B /* TCAminesweeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5497ECA2603DD7000C5AD5B /* Build configuration list for PBXNativeTarget "TCAminesweeperTests" */;
+			buildPhases = (
+				A5497EBF2603DD7000C5AD5B /* Sources */,
+				A5497EC02603DD7000C5AD5B /* Frameworks */,
+				A5497EC12603DD7000C5AD5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5497EC92603DD7000C5AD5B /* PBXTargetDependency */,
+			);
+			name = TCAminesweeperTests;
+			packageProductDependencies = (
+				A568FB6F26055C0500475045 /* SnapshotTesting */,
+			);
+			productName = TCAminesweeperTests;
+			productReference = A5497EC32603DD7000C5AD5B /* TCAminesweeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A549809526053BD900C5AD5B /* LiveHighScoreServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A54980A026053BD900C5AD5B /* Build configuration list for PBXNativeTarget "LiveHighScoreServiceTests" */;
+			buildPhases = (
+				A549809226053BD900C5AD5B /* Sources */,
+				A549809326053BD900C5AD5B /* Frameworks */,
+				A549809426053BD900C5AD5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A549809D26053BD900C5AD5B /* PBXTargetDependency */,
+			);
+			name = LiveHighScoreServiceTests;
+			productName = LiveHighScoreServiceTests;
+			productReference = A549809626053BD900C5AD5B /* LiveHighScoreServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A549813B26053CBD00C5AD5B /* LiveSettingsServiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A549814326053CBD00C5AD5B /* Build configuration list for PBXNativeTarget "LiveSettingsServiceTests" */;
+			buildPhases = (
+				A549813826053CBD00C5AD5B /* Sources */,
+				A549813926053CBD00C5AD5B /* Frameworks */,
+				A549813A26053CBD00C5AD5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A549823526053D5200C5AD5B /* PBXTargetDependency */,
+			);
+			name = LiveSettingsServiceTests;
+			productName = LiveSettingsServiceTests;
+			productReference = A549813C26053CBD00C5AD5B /* LiveSettingsServiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5573F7F2600DE220098EBE4 /* GameCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5573F882600DE220098EBE4 /* Build configuration list for PBXNativeTarget "GameCoreTests" */;
+			buildPhases = (
+				A5573F7C2600DE220098EBE4 /* Sources */,
+				A5573F7D2600DE220098EBE4 /* Frameworks */,
+				A5573F7E2600DE220098EBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5573F872600DE220098EBE4 /* PBXTargetDependency */,
+			);
+			name = GameCoreTests;
+			productName = GameCoreTests;
+			productReference = A5573F802600DE220098EBE4 /* GameCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5574037260114670098EBE4 /* GameViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5574040260114670098EBE4 /* Build configuration list for PBXNativeTarget "GameViewTests" */;
+			buildPhases = (
+				A5574034260114670098EBE4 /* Sources */,
+				A5574035260114670098EBE4 /* Frameworks */,
+				A5574036260114670098EBE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A557403F260114670098EBE4 /* PBXTargetDependency */,
+			);
+			name = GameViewTests;
+			productName = GameViewTests;
+			productReference = A5574038260114670098EBE4 /* GameViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A568FD5626062ECC00475045 /* SettingsCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A568FD5F26062ECC00475045 /* Build configuration list for PBXNativeTarget "SettingsCoreTests" */;
+			buildPhases = (
+				A568FD5326062ECC00475045 /* Sources */,
+				A568FD5426062ECC00475045 /* Frameworks */,
+				A568FD5526062ECC00475045 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FD5E26062ECC00475045 /* PBXTargetDependency */,
+			);
+			name = SettingsCoreTests;
+			productName = SettingsCoreTests;
+			productReference = A568FD5726062ECC00475045 /* SettingsCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A590E2D125FFC0D300019BF4 /* MinefieldCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A590E2DA25FFC0D300019BF4 /* Build configuration list for PBXNativeTarget "MinefieldCoreTests" */;
+			buildPhases = (
+				A590E2CE25FFC0D300019BF4 /* Sources */,
+				A590E2CF25FFC0D300019BF4 /* Frameworks */,
+				A590E2D025FFC0D300019BF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A590E2D925FFC0D300019BF4 /* PBXTargetDependency */,
+			);
+			name = MinefieldCoreTests;
+			packageProductDependencies = (
+				A568FD1B2605813A00475045 /* SnapshotTesting */,
+			);
+			productName = MinefieldCoreTests;
+			productReference = A590E2D225FFC0D300019BF4 /* MinefieldCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5CCBEA125FE5131001E57FA /* NewGameCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBEB925FE5132001E57FA /* Build configuration list for PBXNativeTarget "NewGameCore" */;
+			buildPhases = (
+				A5CCBE9D25FE5131001E57FA /* Headers */,
+				A5CCBE9E25FE5131001E57FA /* Sources */,
+				A5CCBE9F25FE5131001E57FA /* Frameworks */,
+				A5CCBEA025FE5131001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBB026056B0D00475045 /* PBXTargetDependency */,
+				A568FBAE26056AE300475045 /* PBXTargetDependency */,
+			);
+			name = NewGameCore;
+			productName = NewGameCore;
+			productReference = A5CCBEA225FE5131001E57FA /* NewGameCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBEA925FE5132001E57FA /* NewGameCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBEBC25FE5132001E57FA /* Build configuration list for PBXNativeTarget "NewGameCoreTests" */;
+			buildPhases = (
+				A5CCBEA625FE5132001E57FA /* Sources */,
+				A5CCBEA725FE5132001E57FA /* Frameworks */,
+				A5CCBEA825FE5132001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5CCBEAD25FE5132001E57FA /* PBXTargetDependency */,
+			);
+			name = NewGameCoreTests;
+			productName = NewGameCoreTests;
+			productReference = A5CCBEAA25FE5132001E57FA /* NewGameCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5CCBED225FE5149001E57FA /* AppCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBEEA25FE514A001E57FA /* Build configuration list for PBXNativeTarget "AppCore" */;
+			buildPhases = (
+				A5CCBECE25FE5149001E57FA /* Headers */,
+				A5CCBECF25FE5149001E57FA /* Sources */,
+				A5CCBED025FE5149001E57FA /* Frameworks */,
+				A5CCBED125FE5149001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBD826056B5400475045 /* PBXTargetDependency */,
+				A568FBD626056B4C00475045 /* PBXTargetDependency */,
+				A568FBD426056B4500475045 /* PBXTargetDependency */,
+			);
+			name = AppCore;
+			productName = AppCore;
+			productReference = A5CCBED325FE5149001E57FA /* AppCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBF0025FE5155001E57FA /* AppView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBF1825FE5155001E57FA /* Build configuration list for PBXNativeTarget "AppView" */;
+			buildPhases = (
+				A5CCBEFC25FE5155001E57FA /* Headers */,
+				A5CCBEFD25FE5155001E57FA /* Sources */,
+				A5CCBEFE25FE5155001E57FA /* Frameworks */,
+				A5CCBEFF25FE5155001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBD226056B3900475045 /* PBXTargetDependency */,
+				A568FBD026056B3400475045 /* PBXTargetDependency */,
+				A568FBCE26056B3000475045 /* PBXTargetDependency */,
+				A568FBCC26056B2800475045 /* PBXTargetDependency */,
+			);
+			name = AppView;
+			productName = AppView;
+			productReference = A5CCBF0125FE5155001E57FA /* AppView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBF3225FE5166001E57FA /* NewGameView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBF4A25FE5166001E57FA /* Build configuration list for PBXNativeTarget "NewGameView" */;
+			buildPhases = (
+				A5CCBF2E25FE5166001E57FA /* Headers */,
+				A5CCBF2F25FE5166001E57FA /* Sources */,
+				A5CCBF3025FE5166001E57FA /* Frameworks */,
+				A5CCBF3125FE5166001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBAC26056AD500475045 /* PBXTargetDependency */,
+				A568FBAA26056AD000475045 /* PBXTargetDependency */,
+			);
+			name = NewGameView;
+			productName = NewGameView;
+			productReference = A5CCBF3325FE5166001E57FA /* NewGameView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBF5E25FE5181001E57FA /* SettingsCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBF7625FE5181001E57FA /* Build configuration list for PBXNativeTarget "SettingsCore" */;
+			buildPhases = (
+				A5CCBF5A25FE5181001E57FA /* Headers */,
+				A5CCBF5B25FE5181001E57FA /* Sources */,
+				A5CCBF5C25FE5181001E57FA /* Frameworks */,
+				A5CCBF5D25FE5181001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBA826056AC800475045 /* PBXTargetDependency */,
+			);
+			name = SettingsCore;
+			productName = SettingsCore;
+			productReference = A5CCBF5F25FE5181001E57FA /* SettingsCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBF8C25FE5188001E57FA /* SettingsView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBFA425FE5189001E57FA /* Build configuration list for PBXNativeTarget "SettingsView" */;
+			buildPhases = (
+				A5CCBF8825FE5188001E57FA /* Headers */,
+				A5CCBF8925FE5188001E57FA /* Sources */,
+				A5CCBF8A25FE5188001E57FA /* Frameworks */,
+				A5CCBF8B25FE5188001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBA626056AC100475045 /* PBXTargetDependency */,
+			);
+			name = SettingsView;
+			productName = SettingsView;
+			productReference = A5CCBF8D25FE5188001E57FA /* SettingsView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBFBC25FE51AB001E57FA /* HighScoresCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCBFD425FE51AC001E57FA /* Build configuration list for PBXNativeTarget "HighScoresCore" */;
+			buildPhases = (
+				A5CCBFB825FE51AB001E57FA /* Headers */,
+				A5CCBFB925FE51AB001E57FA /* Sources */,
+				A5CCBFBA25FE51AB001E57FA /* Frameworks */,
+				A5CCBFBB25FE51AB001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBA426056ABB00475045 /* PBXTargetDependency */,
+			);
+			name = HighScoresCore;
+			packageProductDependencies = (
+			);
+			productName = HighScoresCore;
+			productReference = A5CCBFBD25FE51AB001E57FA /* HighScoresCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCBFEE25FE51B2001E57FA /* HighScoresView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC00625FE51B2001E57FA /* Build configuration list for PBXNativeTarget "HighScoresView" */;
+			buildPhases = (
+				A5CCBFEA25FE51B2001E57FA /* Headers */,
+				A5CCBFEB25FE51B2001E57FA /* Sources */,
+				A5CCBFEC25FE51B2001E57FA /* Frameworks */,
+				A5CCBFED25FE51B2001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBA226056AB200475045 /* PBXTargetDependency */,
+			);
+			name = HighScoresView;
+			productName = HighScoresView;
+			productReference = A5CCBFEF25FE51B2001E57FA /* HighScoresView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC02225FE51C4001E57FA /* GameCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC03A25FE51C4001E57FA /* Build configuration list for PBXNativeTarget "GameCore" */;
+			buildPhases = (
+				A5CCC01E25FE51C4001E57FA /* Headers */,
+				A5CCC01F25FE51C4001E57FA /* Sources */,
+				A5CCC02025FE51C4001E57FA /* Frameworks */,
+				A5CCC02125FE51C4001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FBA026056AAA00475045 /* PBXTargetDependency */,
+			);
+			name = GameCore;
+			productName = GameCore;
+			productReference = A5CCC02325FE51C4001E57FA /* GameCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC05825FE51CD001E57FA /* GameView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC07025FE51CE001E57FA /* Build configuration list for PBXNativeTarget "GameView" */;
+			buildPhases = (
+				A5CCC05425FE51CD001E57FA /* Headers */,
+				A5CCC05525FE51CD001E57FA /* Sources */,
+				A5CCC05625FE51CD001E57FA /* Frameworks */,
+				A5CCC05725FE51CD001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9E26056AA200475045 /* PBXTargetDependency */,
+				A568FB9C26056A9C00475045 /* PBXTargetDependency */,
+			);
+			name = GameView;
+			productName = GameView;
+			productReference = A5CCC05925FE51CD001E57FA /* GameView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC09025FE520E001E57FA /* MinefieldCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC0A825FE520E001E57FA /* Build configuration list for PBXNativeTarget "MinefieldCore" */;
+			buildPhases = (
+				A5CCC08C25FE520E001E57FA /* Headers */,
+				A5CCC08D25FE520E001E57FA /* Sources */,
+				A5CCC08E25FE520E001E57FA /* Frameworks */,
+				A5CCC08F25FE520E001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9A26056A9300475045 /* PBXTargetDependency */,
+			);
+			name = MinefieldCore;
+			productName = MinefieldCore;
+			productReference = A5CCC09125FE520E001E57FA /* MinefieldCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC0CA25FE521A001E57FA /* MinefieldView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC0E225FE521A001E57FA /* Build configuration list for PBXNativeTarget "MinefieldView" */;
+			buildPhases = (
+				A5CCC0C625FE521A001E57FA /* Headers */,
+				A5CCC0C725FE521A001E57FA /* Sources */,
+				A5CCC0C825FE521A001E57FA /* Frameworks */,
+				A5CCC0C925FE521A001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9826056A8A00475045 /* PBXTargetDependency */,
+				A568FB9626056A8500475045 /* PBXTargetDependency */,
+			);
+			name = MinefieldView;
+			productName = MinefieldView;
+			productReference = A5CCC0CB25FE521A001E57FA /* MinefieldView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC10625FE5247001E57FA /* TileCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC11E25FE5248001E57FA /* Build configuration list for PBXNativeTarget "TileCore" */;
+			buildPhases = (
+				A5CCC10225FE5247001E57FA /* Headers */,
+				A5CCC10325FE5247001E57FA /* Sources */,
+				A5CCC10425FE5247001E57FA /* Frameworks */,
+				A5CCC10525FE5247001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB8C26056A3600475045 /* PBXTargetDependency */,
+			);
+			name = TileCore;
+			productName = TileCore;
+			productReference = A5CCC10725FE5247001E57FA /* TileCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC14425FE524E001E57FA /* TileView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC15C25FE524E001E57FA /* Build configuration list for PBXNativeTarget "TileView" */;
+			buildPhases = (
+				A5CCC14025FE524E001E57FA /* Headers */,
+				A5CCC14125FE524E001E57FA /* Sources */,
+				A5CCC14225FE524E001E57FA /* Frameworks */,
+				A5CCC14325FE524E001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB8E26056A3D00475045 /* PBXTargetDependency */,
+			);
+			name = TileView;
+			productName = TileView;
+			productReference = A5CCC14525FE524E001E57FA /* TileView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC19C25FE526D001E57FA /* Build configuration list for PBXNativeTarget "TCAminesweeperCommon" */;
+			buildPhases = (
+				A5CCC18025FE526C001E57FA /* Headers */,
+				A5CCC18125FE526C001E57FA /* Sources */,
+				A5CCC18225FE526C001E57FA /* Frameworks */,
+				A5CCC18325FE526C001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TCAminesweeperCommon;
+			packageProductDependencies = (
+				A5CCCE5925FE9BE4001E57FA /* ComposableArchitecture */,
+			);
+			productName = TCAminesweeperCommon;
+			productReference = A5CCC18525FE526C001E57FA /* TCAminesweeperCommon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC1C625FE528E001E57FA /* HighScoreService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC1DE25FE528F001E57FA /* Build configuration list for PBXNativeTarget "HighScoreService" */;
+			buildPhases = (
+				A5CCC1C225FE528E001E57FA /* Headers */,
+				A5CCC1C325FE528E001E57FA /* Sources */,
+				A5CCC1C425FE528E001E57FA /* Frameworks */,
+				A5CCC1C525FE528E001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9026056A4500475045 /* PBXTargetDependency */,
+			);
+			name = HighScoreService;
+			packageProductDependencies = (
+			);
+			productName = HighScoreService;
+			productReference = A5CCC1C725FE528E001E57FA /* HighScoreService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC20A25FE529B001E57FA /* LiveHighScoreService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC22225FE529B001E57FA /* Build configuration list for PBXNativeTarget "LiveHighScoreService" */;
+			buildPhases = (
+				A5CCC20625FE529B001E57FA /* Headers */,
+				A5CCC20725FE529B001E57FA /* Sources */,
+				A5CCC20825FE529B001E57FA /* Frameworks */,
+				A5CCC20925FE529B001E57FA /* Resources */,
+				A5CCC5BB25FE6585001E57FA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5CCC5BA25FE6585001E57FA /* PBXTargetDependency */,
+			);
+			name = LiveHighScoreService;
+			productName = LiveHighScoreService;
+			productReference = A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CCC2A625FE52BA001E57FA /* LiveSettingsService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CCC2B025FE52BA001E57FA /* Build configuration list for PBXNativeTarget "LiveSettingsService" */;
+			buildPhases = (
+				A5CCC2A225FE52BA001E57FA /* Headers */,
+				A5CCC2A325FE52BA001E57FA /* Sources */,
+				A5CCC2A425FE52BA001E57FA /* Frameworks */,
+				A5CCC2A525FE52BA001E57FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9426056A5E00475045 /* PBXTargetDependency */,
+			);
+			name = LiveSettingsService;
+			productName = LiveSettingsService;
+			productReference = A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5CEBC7525EFF4D30013EA06 /* TCAminesweeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5CEBC9B25EFF4D60013EA06 /* Build configuration list for PBXNativeTarget "TCAminesweeper" */;
+			buildPhases = (
+				A5CEBC7225EFF4D30013EA06 /* Sources */,
+				A5CEBC7325EFF4D30013EA06 /* Frameworks */,
+				A5CEBC7425EFF4D30013EA06 /* Resources */,
+				A5CCBE8425FE50DA001E57FA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FC2826056B9400475045 /* PBXTargetDependency */,
+				A5CCC0A525FE520E001E57FA /* PBXTargetDependency */,
+				A5CCBEB625FE5132001E57FA /* PBXTargetDependency */,
+				A5CCBEE725FE514A001E57FA /* PBXTargetDependency */,
+				A5CCBF1525FE5155001E57FA /* PBXTargetDependency */,
+				A5CCBF4725FE5166001E57FA /* PBXTargetDependency */,
+				A5CCBF7325FE5181001E57FA /* PBXTargetDependency */,
+				A5CCBFA125FE5189001E57FA /* PBXTargetDependency */,
+				A5CCBFD125FE51AC001E57FA /* PBXTargetDependency */,
+				A5CCC00325FE51B2001E57FA /* PBXTargetDependency */,
+				A5CCC03725FE51C4001E57FA /* PBXTargetDependency */,
+				A5CCC06D25FE51CE001E57FA /* PBXTargetDependency */,
+				A5CCC0DF25FE521A001E57FA /* PBXTargetDependency */,
+				A5CCC15925FE524E001E57FA /* PBXTargetDependency */,
+				A5CCC19925FE526D001E57FA /* PBXTargetDependency */,
+				A5CCC1DB25FE528F001E57FA /* PBXTargetDependency */,
+				A5CCC21F25FE529B001E57FA /* PBXTargetDependency */,
+				A5CCC2AD25FE52BA001E57FA /* PBXTargetDependency */,
+				A5E27E7F25FEAEE0008F55DB /* PBXTargetDependency */,
+			);
+			name = TCAminesweeper;
+			packageProductDependencies = (
+			);
+			productName = TCAminesweeper;
+			productReference = A5CEBC7625EFF4D30013EA06 /* TCAminesweeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5D02CE526028E8C0004D542 /* AppCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5D02CF026028E8D0004D542 /* Build configuration list for PBXNativeTarget "AppCoreTests" */;
+			buildPhases = (
+				A5D02CE226028E8C0004D542 /* Sources */,
+				A5D02CE326028E8C0004D542 /* Frameworks */,
+				A5D02CE426028E8C0004D542 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5D02CED26028E8D0004D542 /* PBXTargetDependency */,
+			);
+			name = AppCoreTests;
+			productName = AppCoreTests;
+			productReference = A5D02CE626028E8C0004D542 /* AppCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A5E27E7825FEAEE0008F55DB /* SettingsService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E27E8225FEAEE0008F55DB /* Build configuration list for PBXNativeTarget "SettingsService" */;
+			buildPhases = (
+				A5E27E7425FEAEE0008F55DB /* Headers */,
+				A5E27E7525FEAEE0008F55DB /* Sources */,
+				A5E27E7625FEAEE0008F55DB /* Frameworks */,
+				A5E27E7725FEAEE0008F55DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A568FB9226056A4F00475045 /* PBXTargetDependency */,
+			);
+			name = SettingsService;
+			productName = SettingsService;
+			productReference = A5E27E7925FEAEE0008F55DB /* SettingsService.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5CEBC6E25EFF4D30013EA06 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					A5497EC22603DD7000C5AD5B = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = A5CEBC7525EFF4D30013EA06;
+					};
+					A549809526053BD900C5AD5B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A549813B26053CBD00C5AD5B = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5573F7F2600DE220098EBE4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5574037260114670098EBE4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A568FD5626062ECC00475045 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A590E2D125FFC0D300019BF4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBEA125FE5131001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBEA925FE5132001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					A5CCBED225FE5149001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBF0025FE5155001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBF3225FE5166001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBF5E25FE5181001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBF8C25FE5188001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBFBC25FE51AB001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCBFEE25FE51B2001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC02225FE51C4001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC05825FE51CD001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC09025FE520E001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC0CA25FE521A001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC10625FE5247001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC14425FE524E001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC18425FE526C001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC1C625FE528E001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC20A25FE529B001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CCC2A625FE52BA001E57FA = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5CEBC7525EFF4D30013EA06 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5D02CE526028E8C0004D542 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A5E27E7825FEAEE0008F55DB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = A5CEBC7125EFF4D30013EA06 /* Build configuration list for PBXProject "TCAminesweeper" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5CEBC6D25EFF4D30013EA06;
+			packageReferences = (
+				A5CEBCA725EFF5470013EA06 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				A568FB6E26055C0500475045 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
+			productRefGroup = A5CEBC7725EFF4D30013EA06 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5CEBC7525EFF4D30013EA06 /* TCAminesweeper */,
+				A5497EC22603DD7000C5AD5B /* TCAminesweeperTests */,
+				A5CCBED225FE5149001E57FA /* AppCore */,
+				A5D02CE526028E8C0004D542 /* AppCoreTests */,
+				A5CCBF0025FE5155001E57FA /* AppView */,
+				A5CCBEA125FE5131001E57FA /* NewGameCore */,
+				A5CCBEA925FE5132001E57FA /* NewGameCoreTests */,
+				A5CCBF3225FE5166001E57FA /* NewGameView */,
+				A5CCBF5E25FE5181001E57FA /* SettingsCore */,
+				A568FD5626062ECC00475045 /* SettingsCoreTests */,
+				A5CCBF8C25FE5188001E57FA /* SettingsView */,
+				A5CCBFBC25FE51AB001E57FA /* HighScoresCore */,
+				A5CCBFEE25FE51B2001E57FA /* HighScoresView */,
+				A5CCC02225FE51C4001E57FA /* GameCore */,
+				A5573F7F2600DE220098EBE4 /* GameCoreTests */,
+				A5CCC05825FE51CD001E57FA /* GameView */,
+				A5574037260114670098EBE4 /* GameViewTests */,
+				A5CCC09025FE520E001E57FA /* MinefieldCore */,
+				A590E2D125FFC0D300019BF4 /* MinefieldCoreTests */,
+				A5CCC0CA25FE521A001E57FA /* MinefieldView */,
+				A5CCC10625FE5247001E57FA /* TileCore */,
+				A5CCC14425FE524E001E57FA /* TileView */,
+				A5CCC1C625FE528E001E57FA /* HighScoreService */,
+				A5E27E7825FEAEE0008F55DB /* SettingsService */,
+				A5CCC20A25FE529B001E57FA /* LiveHighScoreService */,
+				A549809526053BD900C5AD5B /* LiveHighScoreServiceTests */,
+				A5CCC2A625FE52BA001E57FA /* LiveSettingsService */,
+				A549813B26053CBD00C5AD5B /* LiveSettingsServiceTests */,
+				A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5497EC12603DD7000C5AD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549809426053BD900C5AD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549813A26053CBD00C5AD5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5573F7E2600DE220098EBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5574036260114670098EBE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A568FD5526062ECC00475045 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590E2D025FFC0D300019BF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEA025FE5131001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEA825FE5132001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBED125FE5149001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEFF25FE5155001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF3125FE5166001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF5D25FE5181001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF8B25FE5188001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFBB25FE51AB001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFED25FE51B2001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC02125FE51C4001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC05725FE51CD001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC08F25FE520E001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC0C925FE521A001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC10525FE5247001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC14325FE524E001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC18325FE526C001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC1C525FE528E001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC20925FE529B001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC2A525FE52BA001E57FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CEBC7425EFF4D30013EA06 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CEBCAE25EFF5920013EA06 /* Colors.xcassets in Resources */,
+				A5CEBC7E25EFF4D60013EA06 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D02CE426028E8C0004D542 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E27E7725FEAEE0008F55DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5497EBF2603DD7000C5AD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568FB53260559F200475045 /* LiveMinefieldEnvironmentTests.swift in Sources */,
+				A5497F922603F4BD00C5AD5B /* LiveNewGameEnvironmentTests.swift in Sources */,
+				A5497FAC2603FA0500C5AD5B /* GridTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549809226053BD900C5AD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A54980EC26053C0B00C5AD5B /* LiveHighScoreServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A549813826053CBD00C5AD5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A549821926053D1F00C5AD5B /* LiveSettingsServiceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5573F7C2600DE220098EBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A53F39D62606BE37007DB76E /* GameCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5574034260114670098EBE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A557403B260114670098EBE4 /* GameViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A568FD5326062ECC00475045 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A568FE2026062FD300475045 /* SettingsCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A590E2CE25FFC0D300019BF4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590E2F225FFC0E400019BF4 /* MinefieldCoreTests.swift in Sources */,
+				A568FE3D260638D400475045 /* MinefieldAttributesTests.swift in Sources */,
+				A568FCE626057EA200475045 /* MinefieldStateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBE9E25FE5131001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2800725FEB73D008F55DB /* NewGameCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEA625FE5132001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A590E20025FFAE0600019BF4 /* NewGameCoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBECF25FE5149001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E280A325FEBAE7008F55DB /* AppCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBEFD25FE5155001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E280E525FEBCC2008F55DB /* AppView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF2F25FE5166001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2804625FEB803008F55DB /* NewGameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF5B25FE5181001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCD0C025FEA142001E57FA /* SettingsCore.swift in Sources */,
+				A5CCD04725FE9F50001E57FA /* MinefieldAttributes+Normalize.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBF8925FE5188001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCFCB25FE9F0B001E57FA /* SettingsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFB925FE51AB001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCBF125FE914C001E57FA /* HighScoreCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCBFEB25FE51B2001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCB9525FE8FD1001E57FA /* HighScoreView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC01F25FE51C4001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCB1825FE877D001E57FA /* HeaderCore.swift in Sources */,
+				A5CCCA9A25FE86EE001E57FA /* GameCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC05525FE51CD001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCAB925FE86F7001E57FA /* GameView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC08D25FE520E001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCCA5C25FE8676001E57FA /* MinefieldCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC0C725FE521A001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC9FF25FE85FB001E57FA /* MinefieldView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC10325FE5247001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC63925FE6769001E57FA /* TileCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC14125FE524E001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC9A225FE84CE001E57FA /* TileViews.swift in Sources */,
+				A5CCC98325FE84C9001E57FA /* TileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC18125FE526C001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E2808425FEB8AD008F55DB /* TextAlert.swift in Sources */,
+				A5CCCED525FE9C1A001E57FA /* MinefieldAttributes.swift in Sources */,
+				A5CCCF8D25FE9EAD001E57FA /* Difficulty+MinefieldAttributes.swift in Sources */,
+				A5CCCE5C25FE9C06001E57FA /* UserSettings.swift in Sources */,
+				A5CCCB7525FE8AFF001E57FA /* Fonts.swift in Sources */,
+				A549804126040E3D00C5AD5B /* GridInfo.swift in Sources */,
+				A5CCC9E025FE8531001E57FA /* Colors.swift in Sources */,
+				A581A5D12606C2C30036E6AC /* Shuffler.swift in Sources */,
+				A5CCCC8C25FE94CA001E57FA /* Difficulty.swift in Sources */,
+				A5CCCF3025FE9D03001E57FA /* UserHighScore.swift in Sources */,
+				A5CCC43F25FE64DE001E57FA /* Grid.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC1C325FE528E001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC3A025FE645F001E57FA /* HighScoreService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC20725FE529B001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5CCC55825FE6560001E57FA /* LiveHighScoreService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CCC2A325FE52BA001E57FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E27D6325FEADF9008F55DB /* LiveSettingsService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5CEBC7225EFF4D30013EA06 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E281FE25FEBE78008F55DB /* LiveHighScoreService.swift in Sources */,
+				A5E281FF25FEBE78008F55DB /* LiveSettingsService.swift in Sources */,
+				A5E2820025FEBE78008F55DB /* LiveMinefieldEnvironment.swift in Sources */,
+				A5E2820125FEBE78008F55DB /* LiveGameEnvironment.swift in Sources */,
+				A568FC2A26056BBB00475045 /* Grid+String.swift in Sources */,
+				A5E2820225FEBE78008F55DB /* LiveNewGameEnvironment.swift in Sources */,
+				A5E2820325FEBE78008F55DB /* LiveHighScoreEnvironment.swift in Sources */,
+				A5E2820425FEBE78008F55DB /* LiveSettingsEnvironment.swift in Sources */,
+				A5E2820525FEBE78008F55DB /* LiveAppEnvirontment.swift in Sources */,
+				A5E281DE25FEBE1B008F55DB /* TCAminesweeperApp.swift in Sources */,
+				A5E281BF25FEBE12008F55DB /* AppView.swift in Sources */,
+				A5E281A025FEBE0D008F55DB /* RootView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5D02CE226028E8C0004D542 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5D02DAA26028EFF0004D542 /* AppCoreTests.swift in Sources */,
+				A5D02D4D26028EA60004D542 /* AppCore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5E27E7525FEAEE0008F55DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E27EA325FEAEE9008F55DB /* SettingsService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5497EC92603DD7000C5AD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CEBC7525EFF4D30013EA06 /* TCAminesweeper */;
+			targetProxy = A5497EC82603DD7000C5AD5B /* PBXContainerItemProxy */;
+		};
+		A549809D26053BD900C5AD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC20A25FE529B001E57FA /* LiveHighScoreService */;
+			targetProxy = A549809C26053BD900C5AD5B /* PBXContainerItemProxy */;
+		};
+		A549823526053D5200C5AD5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC2A625FE52BA001E57FA /* LiveSettingsService */;
+			targetProxy = A549823426053D5200C5AD5B /* PBXContainerItemProxy */;
+		};
+		A5573F872600DE220098EBE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC02225FE51C4001E57FA /* GameCore */;
+			targetProxy = A5573F862600DE220098EBE4 /* PBXContainerItemProxy */;
+		};
+		A557403F260114670098EBE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC05825FE51CD001E57FA /* GameView */;
+			targetProxy = A557403E260114670098EBE4 /* PBXContainerItemProxy */;
+		};
+		A568FB8C26056A3600475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */;
+			targetProxy = A568FB8B26056A3600475045 /* PBXContainerItemProxy */;
+		};
+		A568FB8E26056A3D00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC10625FE5247001E57FA /* TileCore */;
+			targetProxy = A568FB8D26056A3D00475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9026056A4500475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */;
+			targetProxy = A568FB8F26056A4500475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9226056A4F00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */;
+			targetProxy = A568FB9126056A4F00475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9426056A5E00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E27E7825FEAEE0008F55DB /* SettingsService */;
+			targetProxy = A568FB9326056A5E00475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9626056A8500475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC09025FE520E001E57FA /* MinefieldCore */;
+			targetProxy = A568FB9526056A8500475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9826056A8A00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC14425FE524E001E57FA /* TileView */;
+			targetProxy = A568FB9726056A8A00475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9A26056A9300475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC10625FE5247001E57FA /* TileCore */;
+			targetProxy = A568FB9926056A9300475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9C26056A9C00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC02225FE51C4001E57FA /* GameCore */;
+			targetProxy = A568FB9B26056A9C00475045 /* PBXContainerItemProxy */;
+		};
+		A568FB9E26056AA200475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC0CA25FE521A001E57FA /* MinefieldView */;
+			targetProxy = A568FB9D26056AA200475045 /* PBXContainerItemProxy */;
+		};
+		A568FBA026056AAA00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC09025FE520E001E57FA /* MinefieldCore */;
+			targetProxy = A568FB9F26056AAA00475045 /* PBXContainerItemProxy */;
+		};
+		A568FBA226056AB200475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBFBC25FE51AB001E57FA /* HighScoresCore */;
+			targetProxy = A568FBA126056AB200475045 /* PBXContainerItemProxy */;
+		};
+		A568FBA426056ABB00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC1C625FE528E001E57FA /* HighScoreService */;
+			targetProxy = A568FBA326056ABB00475045 /* PBXContainerItemProxy */;
+		};
+		A568FBA626056AC100475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF5E25FE5181001E57FA /* SettingsCore */;
+			targetProxy = A568FBA526056AC100475045 /* PBXContainerItemProxy */;
+		};
+		A568FBA826056AC800475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E27E7825FEAEE0008F55DB /* SettingsService */;
+			targetProxy = A568FBA726056AC800475045 /* PBXContainerItemProxy */;
+		};
+		A568FBAA26056AD000475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBEA125FE5131001E57FA /* NewGameCore */;
+			targetProxy = A568FBA926056AD000475045 /* PBXContainerItemProxy */;
+		};
+		A568FBAC26056AD500475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC05825FE51CD001E57FA /* GameView */;
+			targetProxy = A568FBAB26056AD500475045 /* PBXContainerItemProxy */;
+		};
+		A568FBAE26056AE300475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC1C625FE528E001E57FA /* HighScoreService */;
+			targetProxy = A568FBAD26056AE300475045 /* PBXContainerItemProxy */;
+		};
+		A568FBB026056B0D00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC02225FE51C4001E57FA /* GameCore */;
+			targetProxy = A568FBAF26056B0D00475045 /* PBXContainerItemProxy */;
+		};
+		A568FBCC26056B2800475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF3225FE5166001E57FA /* NewGameView */;
+			targetProxy = A568FBCB26056B2800475045 /* PBXContainerItemProxy */;
+		};
+		A568FBCE26056B3000475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBFEE25FE51B2001E57FA /* HighScoresView */;
+			targetProxy = A568FBCD26056B3000475045 /* PBXContainerItemProxy */;
+		};
+		A568FBD026056B3400475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBED225FE5149001E57FA /* AppCore */;
+			targetProxy = A568FBCF26056B3400475045 /* PBXContainerItemProxy */;
+		};
+		A568FBD226056B3900475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF8C25FE5188001E57FA /* SettingsView */;
+			targetProxy = A568FBD126056B3900475045 /* PBXContainerItemProxy */;
+		};
+		A568FBD426056B4500475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBFBC25FE51AB001E57FA /* HighScoresCore */;
+			targetProxy = A568FBD326056B4500475045 /* PBXContainerItemProxy */;
+		};
+		A568FBD626056B4C00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBEA125FE5131001E57FA /* NewGameCore */;
+			targetProxy = A568FBD526056B4C00475045 /* PBXContainerItemProxy */;
+		};
+		A568FBD826056B5400475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF5E25FE5181001E57FA /* SettingsCore */;
+			targetProxy = A568FBD726056B5400475045 /* PBXContainerItemProxy */;
+		};
+		A568FC2826056B9400475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC10625FE5247001E57FA /* TileCore */;
+			targetProxy = A568FC2726056B9400475045 /* PBXContainerItemProxy */;
+		};
+		A568FD5E26062ECC00475045 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF5E25FE5181001E57FA /* SettingsCore */;
+			targetProxy = A568FD5D26062ECC00475045 /* PBXContainerItemProxy */;
+		};
+		A590E2D925FFC0D300019BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC09025FE520E001E57FA /* MinefieldCore */;
+			targetProxy = A590E2D825FFC0D300019BF4 /* PBXContainerItemProxy */;
+		};
+		A5CCBEAD25FE5132001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBEA125FE5131001E57FA /* NewGameCore */;
+			targetProxy = A5CCBEAC25FE5132001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBEB625FE5132001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBEA125FE5131001E57FA /* NewGameCore */;
+			targetProxy = A5CCBEB525FE5132001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBEE725FE514A001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBED225FE5149001E57FA /* AppCore */;
+			targetProxy = A5CCBEE625FE514A001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBF1525FE5155001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF0025FE5155001E57FA /* AppView */;
+			targetProxy = A5CCBF1425FE5155001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBF4725FE5166001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF3225FE5166001E57FA /* NewGameView */;
+			targetProxy = A5CCBF4625FE5166001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBF7325FE5181001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF5E25FE5181001E57FA /* SettingsCore */;
+			targetProxy = A5CCBF7225FE5181001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBFA125FE5189001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBF8C25FE5188001E57FA /* SettingsView */;
+			targetProxy = A5CCBFA025FE5189001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCBFD125FE51AC001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBFBC25FE51AB001E57FA /* HighScoresCore */;
+			targetProxy = A5CCBFD025FE51AC001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC00325FE51B2001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBFEE25FE51B2001E57FA /* HighScoresView */;
+			targetProxy = A5CCC00225FE51B2001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC03725FE51C4001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC02225FE51C4001E57FA /* GameCore */;
+			targetProxy = A5CCC03625FE51C4001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC06D25FE51CE001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC05825FE51CD001E57FA /* GameView */;
+			targetProxy = A5CCC06C25FE51CE001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC0A525FE520E001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC09025FE520E001E57FA /* MinefieldCore */;
+			targetProxy = A5CCC0A425FE520E001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC0DF25FE521A001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC0CA25FE521A001E57FA /* MinefieldView */;
+			targetProxy = A5CCC0DE25FE521A001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC15925FE524E001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC14425FE524E001E57FA /* TileView */;
+			targetProxy = A5CCC15825FE524E001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC19925FE526D001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC18425FE526C001E57FA /* TCAminesweeperCommon */;
+			targetProxy = A5CCC19825FE526D001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC1DB25FE528F001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC1C625FE528E001E57FA /* HighScoreService */;
+			targetProxy = A5CCC1DA25FE528F001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC21F25FE529B001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC20A25FE529B001E57FA /* LiveHighScoreService */;
+			targetProxy = A5CCC21E25FE529B001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC2AD25FE52BA001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC2A625FE52BA001E57FA /* LiveSettingsService */;
+			targetProxy = A5CCC2AC25FE52BA001E57FA /* PBXContainerItemProxy */;
+		};
+		A5CCC5BA25FE6585001E57FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCC1C625FE528E001E57FA /* HighScoreService */;
+			targetProxy = A5CCC5B925FE6585001E57FA /* PBXContainerItemProxy */;
+		};
+		A5D02CED26028E8D0004D542 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5CCBED225FE5149001E57FA /* AppCore */;
+			targetProxy = A5D02CEC26028E8D0004D542 /* PBXContainerItemProxy */;
+		};
+		A5E27E7F25FEAEE0008F55DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5E27E7825FEAEE0008F55DB /* SettingsService */;
+			targetProxy = A5E27E7E25FEAEE0008F55DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A5497ECB2603DD7000C5AD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAminesweeper.app/TCAminesweeper";
+			};
+			name = Debug;
+		};
+		A5497ECC2603DD7000C5AD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TCAminesweeper.app/TCAminesweeper";
+			};
+			name = Release;
+		};
+		A549809E26053BD900C5AD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveHighScoreServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A549809F26053BD900C5AD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveHighScoreServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A549814426053CBD00C5AD5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveSettingsServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A549814526053CBD00C5AD5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveSettingsServiceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5573F892600DE220098EBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5573F8A2600DE220098EBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5574041260114670098EBE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5574042260114670098EBE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A568FD6026062ECC00475045 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A568FD6126062ECC00475045 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A590E2DB25FFC0D300019BF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A590E2DC25FFC0D300019BF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5CCBEBA25FE5132001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBEBB25FE5132001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBEBD25FE5132001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5CCBEBE25FE5132001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5CCBEEB25FE514A001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBEEC25FE514A001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBF1925FE5155001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBF1A25FE5155001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBF4B25FE5166001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBF4C25FE5166001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.NewGameView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBF7725FE5181001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBF7825FE5181001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBFA525FE5189001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBFA625FE5189001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCBFD525FE51AC001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoresCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCBFD625FE51AC001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoresCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC00725FE51B2001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoresView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC00825FE51B2001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoresView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC03B25FE51C4001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC03C25FE51C4001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC07125FE51CE001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC07225FE51CE001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.GameView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC0A925FE520E001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC0AA25FE520E001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC0E325FE521A001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC0E425FE521A001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.MinefieldView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC11F25FE5248001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TileCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC12025FE5248001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TileCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC15D25FE524E001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TileView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC15E25FE524E001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TileView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC19D25FE526D001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeperCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC19E25FE526D001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeperCommon;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC1DF25FE528F001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoreService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC1E025FE528F001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.HighScoreService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC22325FE529B001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveHighScoreService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC22425FE529B001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveHighScoreService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CCC2B125FE52BA001E57FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveSettingsService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5CCC2B225FE52BA001E57FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.LiveSettingsService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A5CEBC9925EFF4D60013EA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5CEBC9A25EFF4D60013EA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5CEBC9C25EFF4D60013EA06 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = WX7NZ48SDJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5CEBC9D25EFF4D60013EA06 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = WX7NZ48SDJ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.TCAminesweeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5D02CEE26028E8D0004D542 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5D02CEF26028E8D0004D542 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.AppCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A5E27E8325FEAEE0008F55DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A5E27E8425FEAEE0008F55DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = md.rogy.SettingsService;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5497ECA2603DD7000C5AD5B /* Build configuration list for PBXNativeTarget "TCAminesweeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5497ECB2603DD7000C5AD5B /* Debug */,
+				A5497ECC2603DD7000C5AD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A54980A026053BD900C5AD5B /* Build configuration list for PBXNativeTarget "LiveHighScoreServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A549809E26053BD900C5AD5B /* Debug */,
+				A549809F26053BD900C5AD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A549814326053CBD00C5AD5B /* Build configuration list for PBXNativeTarget "LiveSettingsServiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A549814426053CBD00C5AD5B /* Debug */,
+				A549814526053CBD00C5AD5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5573F882600DE220098EBE4 /* Build configuration list for PBXNativeTarget "GameCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5573F892600DE220098EBE4 /* Debug */,
+				A5573F8A2600DE220098EBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5574040260114670098EBE4 /* Build configuration list for PBXNativeTarget "GameViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5574041260114670098EBE4 /* Debug */,
+				A5574042260114670098EBE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A568FD5F26062ECC00475045 /* Build configuration list for PBXNativeTarget "SettingsCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A568FD6026062ECC00475045 /* Debug */,
+				A568FD6126062ECC00475045 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A590E2DA25FFC0D300019BF4 /* Build configuration list for PBXNativeTarget "MinefieldCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A590E2DB25FFC0D300019BF4 /* Debug */,
+				A590E2DC25FFC0D300019BF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBEB925FE5132001E57FA /* Build configuration list for PBXNativeTarget "NewGameCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBEBA25FE5132001E57FA /* Debug */,
+				A5CCBEBB25FE5132001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBEBC25FE5132001E57FA /* Build configuration list for PBXNativeTarget "NewGameCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBEBD25FE5132001E57FA /* Debug */,
+				A5CCBEBE25FE5132001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBEEA25FE514A001E57FA /* Build configuration list for PBXNativeTarget "AppCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBEEB25FE514A001E57FA /* Debug */,
+				A5CCBEEC25FE514A001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBF1825FE5155001E57FA /* Build configuration list for PBXNativeTarget "AppView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBF1925FE5155001E57FA /* Debug */,
+				A5CCBF1A25FE5155001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBF4A25FE5166001E57FA /* Build configuration list for PBXNativeTarget "NewGameView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBF4B25FE5166001E57FA /* Debug */,
+				A5CCBF4C25FE5166001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBF7625FE5181001E57FA /* Build configuration list for PBXNativeTarget "SettingsCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBF7725FE5181001E57FA /* Debug */,
+				A5CCBF7825FE5181001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBFA425FE5189001E57FA /* Build configuration list for PBXNativeTarget "SettingsView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBFA525FE5189001E57FA /* Debug */,
+				A5CCBFA625FE5189001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCBFD425FE51AC001E57FA /* Build configuration list for PBXNativeTarget "HighScoresCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCBFD525FE51AC001E57FA /* Debug */,
+				A5CCBFD625FE51AC001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC00625FE51B2001E57FA /* Build configuration list for PBXNativeTarget "HighScoresView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC00725FE51B2001E57FA /* Debug */,
+				A5CCC00825FE51B2001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC03A25FE51C4001E57FA /* Build configuration list for PBXNativeTarget "GameCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC03B25FE51C4001E57FA /* Debug */,
+				A5CCC03C25FE51C4001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC07025FE51CE001E57FA /* Build configuration list for PBXNativeTarget "GameView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC07125FE51CE001E57FA /* Debug */,
+				A5CCC07225FE51CE001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC0A825FE520E001E57FA /* Build configuration list for PBXNativeTarget "MinefieldCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC0A925FE520E001E57FA /* Debug */,
+				A5CCC0AA25FE520E001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC0E225FE521A001E57FA /* Build configuration list for PBXNativeTarget "MinefieldView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC0E325FE521A001E57FA /* Debug */,
+				A5CCC0E425FE521A001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC11E25FE5248001E57FA /* Build configuration list for PBXNativeTarget "TileCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC11F25FE5248001E57FA /* Debug */,
+				A5CCC12025FE5248001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC15C25FE524E001E57FA /* Build configuration list for PBXNativeTarget "TileView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC15D25FE524E001E57FA /* Debug */,
+				A5CCC15E25FE524E001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC19C25FE526D001E57FA /* Build configuration list for PBXNativeTarget "TCAminesweeperCommon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC19D25FE526D001E57FA /* Debug */,
+				A5CCC19E25FE526D001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC1DE25FE528F001E57FA /* Build configuration list for PBXNativeTarget "HighScoreService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC1DF25FE528F001E57FA /* Debug */,
+				A5CCC1E025FE528F001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC22225FE529B001E57FA /* Build configuration list for PBXNativeTarget "LiveHighScoreService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC22325FE529B001E57FA /* Debug */,
+				A5CCC22425FE529B001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CCC2B025FE52BA001E57FA /* Build configuration list for PBXNativeTarget "LiveSettingsService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CCC2B125FE52BA001E57FA /* Debug */,
+				A5CCC2B225FE52BA001E57FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CEBC7125EFF4D30013EA06 /* Build configuration list for PBXProject "TCAminesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CEBC9925EFF4D60013EA06 /* Debug */,
+				A5CEBC9A25EFF4D60013EA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5CEBC9B25EFF4D60013EA06 /* Build configuration list for PBXNativeTarget "TCAminesweeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5CEBC9C25EFF4D60013EA06 /* Debug */,
+				A5CEBC9D25EFF4D60013EA06 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5D02CF026028E8D0004D542 /* Build configuration list for PBXNativeTarget "AppCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5D02CEE26028E8D0004D542 /* Debug */,
+				A5D02CEF26028E8D0004D542 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E27E8225FEAEE0008F55DB /* Build configuration list for PBXNativeTarget "SettingsService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E27E8325FEAEE0008F55DB /* Debug */,
+				A5E27E8425FEAEE0008F55DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A568FB6E26055C0500475045 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = exactVersion;
+				version = 1.8.2;
+			};
+		};
+		A5CEBCA725EFF5470013EA06 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture.git";
+			requirement = {
+				kind = exactVersion;
+				version = 0.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A568FB6F26055C0500475045 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A568FB6E26055C0500475045 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		A568FD1B2605813A00475045 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A568FB6E26055C0500475045 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		A5CCCE5925FE9BE4001E57FA /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5CEBCA725EFF5470013EA06 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+}

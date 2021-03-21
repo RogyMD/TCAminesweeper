@@ -1,0 +1,13 @@
+<MinefieldState: 
+grid: 
+______
+|2456💣|
+|💣💣💣💣💣|
+|💣💣653|
+|221  |
+|     |
+______
+
+content: [TileCore.TileState(id: 0, tile: 2, isHidden: true, isMarked: false), TileCore.TileState(id: 1, tile: 4, isHidden: true, isMarked: false), TileCore.TileState(id: 2, tile: 5, isHidden: true, isMarked: false), TileCore.TileState(id: 3, tile: 6, isHidden: true, isMarked: false), TileCore.TileState(id: 4, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 5, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 6, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 7, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 8, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 9, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 10, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 11, tile: 💣, isHidden: true, isMarked: false), TileCore.TileState(id: 12, tile: 6, isHidden: true, isMarked: false), TileCore.TileState(id: 13, tile: 5, isHidden: true, isMarked: false), TileCore.TileState(id: 14, tile: 3, isHidden: true, isMarked: false), TileCore.TileState(id: 15, tile: 2, isHidden: true, isMarked: false), TileCore.TileState(id: 16, tile: 2, isHidden: true, isMarked: false), TileCore.TileState(id: 17, tile: 1, isHidden: true, isMarked: false), TileCore.TileState(id: 18, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 19, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 20, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 21, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 22, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 23, tile:  , isHidden: true, isMarked: false), TileCore.TileState(id: 24, tile:  , isHidden: true, isMarked: false)]
+gridInfo: <GridInfo: mines: [4, 5, 6, 7, 8, 9, 10, 11]; flagged: []; revealed: []
+result: nil>

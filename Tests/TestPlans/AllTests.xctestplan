@@ -1,0 +1,88 @@
+{
+  "configurations" : [
+    {
+      "id" : "37512B7B-C3B2-4694-BCF9-24B7B1387322",
+      "name" : "Configuration 1",
+      "options" : {
+        "targetForVariableExpansion" : {
+          "containerPath" : "container:TCAminesweeper.xcodeproj",
+          "identifier" : "A5497EC22603DD7000C5AD5B",
+          "name" : "TCAminesweeperTests"
+        }
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:TCAminesweeper.xcodeproj",
+      "identifier" : "A5497EC22603DD7000C5AD5B",
+      "name" : "TCAminesweeperTests"
+    }
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A5D02CE526028E8C0004D542",
+        "name" : "AppCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A5573F7F2600DE220098EBE4",
+        "name" : "GameCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A5574037260114670098EBE4",
+        "name" : "GameViewTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A549809526053BD900C5AD5B",
+        "name" : "LiveHighScoreServiceTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A549813B26053CBD00C5AD5B",
+        "name" : "LiveSettingsServiceTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A590E2D125FFC0D300019BF4",
+        "name" : "MinefieldCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A5CCBEA925FE5132001E57FA",
+        "name" : "NewGameCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A568FD5626062ECC00475045",
+        "name" : "SettingsCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A5497EC22603DD7000C5AD5B",
+        "name" : "TCAminesweeperTests"
+      }
+    }
+  ],
+  "version" : 1
+}
