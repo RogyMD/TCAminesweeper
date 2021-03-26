@@ -5,15 +5,15 @@
 //  Created by Igor Bidiniuc on 10/03/2021.
 //
 
-import Foundation
+import UIKit
 import GameCore
 
 extension GameEnvironment {
     static let live = Self(
         minefieldEnvironment: .live,
-        timerScheduler: DispatchQueue(label: "md.rogy.timer", qos: .background).eraseToAnyScheduler(),
+        timerScheduler: DispatchQueue(label: "md.rogy.timer", qos: .userInitiated).eraseToAnyScheduler(),
         mainQueue: DispatchQueue.main.eraseToAnyScheduler(),
-        selectionFeedback: .init(),
-        notificationFeedback: .init()
+        selectionFeedback: { .fireAndForget { UISelectionFeedbackGenerator().selectionChanged() } },
+        notificationFeedback: { notification in .fireAndForget { UINotificationFeedbackGenerator().notificationOccurred(notification) } }
     )
 }

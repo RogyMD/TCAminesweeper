@@ -51,18 +51,19 @@ public enum GameAction: Equatable {
 }
 
 public struct GameEnvironment {
+    public typealias NotificationFeedbackType = UINotificationFeedbackGenerator.FeedbackType
     public let minefieldEnvironment: MinefieldEnvironment
     public let timerScheduler: AnySchedulerOf<DispatchQueue>
     public let mainQueue: AnySchedulerOf<DispatchQueue>
-    public let selectionFeedback: UISelectionFeedbackGenerator?
-    public let notificationFeedback: UINotificationFeedbackGenerator?
+    public let selectionFeedback: () -> Effect<Never, Never>
+    public let notificationFeedback: (NotificationFeedbackType) -> Effect<Never, Never>
     
     public init(
         minefieldEnvironment: MinefieldEnvironment,
         timerScheduler: AnySchedulerOf<DispatchQueue>,
         mainQueue: AnySchedulerOf<DispatchQueue>,
-        selectionFeedback: UISelectionFeedbackGenerator?,
-        notificationFeedback: UINotificationFeedbackGenerator?
+        selectionFeedback: @escaping () -> Effect<Never, Never>,
+        notificationFeedback: @escaping (NotificationFeedbackType) -> Effect<Never, Never>
     ) {
         self.minefieldEnvironment = minefieldEnvironment
         self.timerScheduler = timerScheduler
@@ -102,7 +103,7 @@ public let gameReducer: Reducer<GameState, GameAction, GameEnvironment> = .combi
                 
             case .toogleMark(_):
                 return .merge(
-                    .fireAndForget { environment.selectionFeedback?.selectionChanged() },
+                    environment.selectionFeedback().fireAndForget(),
                     Effect(value: .updateRemainedMines)
                 )
                 
@@ -141,7 +142,7 @@ public let gameReducer: Reducer<GameState, GameAction, GameEnvironment> = .combi
                 return Effect(value: .gameStarted)
                 
             case let .over(score):
-                let notification: UINotificationFeedbackGenerator.FeedbackType
+                let notification: GameEnvironment.NotificationFeedbackType
                 if let score = score {
                     state.headerState.trailingText = String(format: "%03d", score)
                     state.headerState.centerText = "😎"
@@ -152,10 +153,8 @@ public let gameReducer: Reducer<GameState, GameAction, GameEnvironment> = .combi
                 }
                 
                 return .merge(
-                    .cancel(id: ScoreTimerId()),
-                    .fireAndForget {
-                        environment.notificationFeedback?.notificationOccurred(notification)
-                    }
+                    environment.notificationFeedback(notification).fireAndForget(),
+                    .cancel(id: ScoreTimerId())
                 )
             }
             
@@ -201,8 +200,8 @@ public extension GameEnvironment {
         minefieldEnvironment: MinefieldEnvironment = .mock(),
         timerScheduler: AnySchedulerOf<DispatchQueue> = DispatchQueue.main.eraseToAnyScheduler(),
         mainQueue: AnySchedulerOf<DispatchQueue> = DispatchQueue.main.eraseToAnyScheduler(),
-        selectionFeedback: UISelectionFeedbackGenerator? = nil,
-        notificationFeedback: UINotificationFeedbackGenerator? = nil
+        selectionFeedback: @escaping () -> Effect<Never, Never> = { fatalError() },
+        notificationFeedback: @escaping (NotificationFeedbackType) -> Effect<Never, Never> = { _ in fatalError() }
     ) -> Self {
             Self(
                 minefieldEnvironment: minefieldEnvironment,

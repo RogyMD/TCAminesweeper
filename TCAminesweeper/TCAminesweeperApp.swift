@@ -13,5 +13,8 @@ struct TCAminesweeperApp: App {
         WindowGroup {
             RootView()
         }
+//        .commands { () -> Commands in
+//            Commands
+//        }
     }
 }
