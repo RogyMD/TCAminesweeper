@@ -17,17 +17,23 @@ class GameViewTests: XCTestCase {
     let mainQueue = DispatchQueue.testScheduler
     
     var resultMock: MinefieldState.Result?
+    var selectionFeedbackCalled = false
+    var notificationFeedbackType: GameEnvironment.NotificationFeedbackType?
     
     func testFlow_MarkTile_Win() {
         store.assert(
             .send(.minefieldAction(.tile(0, .longPressed))),
-            .receive(.minefieldAction(.toogleMark(0))),
+            .receive(.minefieldAction(.toogleMark(0))) { _ in
+                XCTAssertTrue(self.selectionFeedbackCalled)
+            },
             .receive(.gameStateChanged(.inProgress(0))),
             .receive(.updateRemainedMines) {
                 $0.navigationBarLeadingText = "000"
             },
             .receive(.updateRemainedMines),
-            .receive(.gameStarted),
+            .receive(.gameStarted) {
+                $0.navigationBarCenterText = "🙂"
+            },
             .sequence(gameOver(result: .win, gameState: .over(score: 0)))
         )
     }
@@ -39,7 +45,9 @@ class GameViewTests: XCTestCase {
             .receive(.updateRemainedMines) {
                 $0.navigationBarTrailingText = "000"
             },
-            .receive(.gameStarted),
+            .receive(.gameStarted) {
+                $0.navigationBarCenterText = "🙂"
+            },
             .do {
                 self.timerScheduler.advance(by: 2)
                 self.mainQueue.advance(by: 2)
@@ -86,7 +94,9 @@ class GameViewTests: XCTestCase {
                 return Effect(value: result)
             }),
             timerScheduler: .init(timerScheduler),
-            mainQueue: .init(mainQueue)
+            mainQueue: .init(mainQueue),
+            selectionFeedback: { self.selectionFeedbackCalled = true; return .none },
+            notificationFeedback: { self.notificationFeedbackType = $0; return .none }
         ))
         .scope(state: { $0.view })
 }

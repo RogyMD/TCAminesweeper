@@ -31,7 +31,7 @@ public struct GameState: Equatable {
         self.minefieldState = minefieldState
         self.headerState = HeaderState(
             leadingText: String(format: "%03d", minefieldState.gridInfo.mines.count),
-            centerText: "🙂",
+            centerText: "😴",
             trailingText: "000"
         )
         self.gameState = .new
@@ -134,7 +134,7 @@ public let gameReducer: Reducer<GameState, GameAction, GameEnvironment> = .combi
             switch newGameState {
             case .new:
                 state.headerState.leadingText = String(format: "%03d", state.minefieldState.gridInfo.mines.count)
-                state.headerState.centerText = "🙂"
+                state.headerState.centerText = "😴"
                 state.headerState.trailingText = "000"
                 return .none
                 
@@ -159,6 +159,10 @@ public let gameReducer: Reducer<GameState, GameAction, GameEnvironment> = .combi
             }
             
         case .gameStarted:
+            if case .inProgress(_) = state.gameState {
+                state.headerState.centerText = "🙂"
+            }
+            
             return .merge(
                 .cancel(id: ScoreTimerId()),
                 Effect

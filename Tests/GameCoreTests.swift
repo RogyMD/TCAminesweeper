@@ -47,7 +47,7 @@ class GameCoreTests: XCTestCase {
                 $0.gameState = .new
                 $0.headerState = HeaderState(
                     leadingText: "002",
-                    centerText: "🙂",
+                    centerText: "😴",
                     trailingText: "000"
                 )
             }
@@ -69,7 +69,9 @@ class GameCoreTests: XCTestCase {
                 $0.headerState.leadingText = "000"
             },
             .receive(.updateRemainedMines),
-            .receive(.gameStarted),
+            .receive(.gameStarted) {
+                $0.headerState.centerText = "🙂"
+            },
             .sequence(scoreIncrement()),
             .sequence(gameOver(result: .win, gameState: .over(score: 1)))
         )
@@ -121,7 +123,9 @@ class GameCoreTests: XCTestCase {
             .receive(.updateRemainedMines) {
                 $0.headerState.leadingText = leadingText
             },
-            .receive(.gameStarted)
+            .receive(.gameStarted) {
+                $0.headerState.centerText = "🙂"
+            }
         ]
     }
     

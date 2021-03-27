@@ -51,6 +51,7 @@ public struct HighScoreView: View {
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
                     Button("Close") { viewStore.send(.cancelButtonTapped) }
+                        .keyboardShortcut(.cancelAction)
                 }
             }
         }

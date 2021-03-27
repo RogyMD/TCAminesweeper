@@ -44,6 +44,16 @@
                ReferencedContainer = "container:TCAminesweeper.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A590E2C1260FD19800834E66"
+               BuildableName = "MainAppSceneTests.xctest"
+               BlueprintName = "MainAppSceneTests"
+               ReferencedContainer = "container:TCAminesweeper.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

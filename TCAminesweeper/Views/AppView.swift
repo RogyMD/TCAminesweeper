@@ -13,7 +13,11 @@ import NewGameView
 import SettingsView
 
 public struct AppView: View {
-    let store: Store<AppState, AppAction>
+    public let store: Store<AppState, AppAction>
+    
+    public init(store: Store<AppState, AppAction>) {
+        self.store = store
+    }
     
     public var body: some View {
         WithViewStore(self.store) { viewStore in
