@@ -25,6 +25,7 @@ public struct GameView: View {
     }
     
     public let store: Store<GameState, GameAction>
+    @Environment(\.scenePhase) private var scenePhase
     
     public init(store: Store<GameState, GameAction>) {
         self.store = store
@@ -38,10 +39,13 @@ public struct GameView: View {
                     action: GameAction.minefieldAction
                 ))
             }
-            .onReceive(NotificationCenter.default.publisher(for: UIApplication.willResignActiveNotification))
-                { _ in viewStore.send(.onDisappear) }
-            .onReceive(NotificationCenter.default.publisher(for: UIApplication.didBecomeActiveNotification))
-                { _ in viewStore.send(.onAppear) }
+            .onChange(of: scenePhase) { newScenePhase in
+                if newScenePhase == .active {
+                    viewStore.send(.onAppear)
+                } else {
+                    viewStore.send(.onDisappear)
+                }
+            }
             .toolbar { self.toolbarContent(viewStore: viewStore) }
             .navigationBarTitleDisplayMode(.inline)
             .background(Color.background.ignoresSafeArea())

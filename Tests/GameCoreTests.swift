@@ -162,8 +162,14 @@ class GameCoreTests: XCTestCase {
             }),
             timerScheduler: .init(timerScheduler),
             mainQueue: .init(mainQueue),
-            selectionFeedback: { [weak self] in self?.selectionFeedbackCalled = true; return .none },
-            notificationFeedback: { [weak self] notificationType in self?.notificationFeedbackType = notificationType; return.none }
+            selectionFeedback: { [weak self] in
+                self?.selectionFeedbackCalled = true
+                return .none
+            },
+            notificationFeedback: { [weak self] notificationType in
+                self?.notificationFeedbackType = notificationType
+                return.none
+            }
         )
     )
 }

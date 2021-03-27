@@ -50,7 +50,9 @@ public struct AppView: View {
                         Button(action: { viewStore.send(.settingsButtonTapped) }) {
                             Image(systemName: "gear")
                         }
+                        
                         Spacer()
+                        
                         Button(action: { viewStore.send(.highScoresButtonTapped) }) {
                             Image(systemName: "list.number")
                         }
