@@ -727,9 +727,9 @@
 		A5CCD00925FE9F38001E57FA /* MinefieldAttributes+Normalize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MinefieldAttributes+Normalize.swift"; sourceTree = "<group>"; };
 		A5CEBC7625EFF4D30013EA06 /* TCAminesweeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAminesweeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5CEBC7925EFF4D30013EA06 /* TCAminesweeperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAminesweeperApp.swift; sourceTree = "<group>"; };
-		A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Assets/Assets.xcassets; sourceTree = "<group>"; };
+		A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5CEBC8225EFF4D60013EA06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Colors.xcassets; path = Assets/Colors.xcassets; sourceTree = "<group>"; };
+		A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A5D02CE626028E8C0004D542 /* AppCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5D02CE826028E8D0004D542 /* AppCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreTests.swift; sourceTree = "<group>"; };
 		A5E27E7925FEAEE0008F55DB /* SettingsService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SettingsService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1115,9 +1115,10 @@
 		A5CEBC6D25EFF4D30013EA06 = {
 			isa = PBXGroup;
 			children = (
+				A590E07C260E84F600834E66 /* TCAminesweeper.entitlements */,
+				A5CEBC8225EFF4D60013EA06 /* Info.plist */,
 				A5CEBC7D25EFF4D60013EA06 /* Assets.xcassets */,
 				A5CEBCAD25EFF5920013EA06 /* Colors.xcassets */,
-				A5CEBC8225EFF4D60013EA06 /* Info.plist */,
 				A5CEBC7825EFF4D30013EA06 /* TCAminesweeper */,
 				A5CEBC8A25EFF4D60013EA06 /* Tests */,
 				A5CEBC7725EFF4D30013EA06 /* Products */,
@@ -1167,7 +1168,6 @@
 		A5CEBC7825EFF4D30013EA06 /* TCAminesweeper */ = {
 			isa = PBXGroup;
 			children = (
-				A590E07C260E84F600834E66 /* TCAminesweeper.entitlements */,
 				A5CEBC7925EFF4D30013EA06 /* TCAminesweeperApp.swift */,
 				A590E14625FFAD1E00019BF4 /* Common */,
 				A5706F8C25F16F5D003994BA /* Constants */,
@@ -4604,7 +4604,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TCAminesweeper/TCAminesweeper.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TCAminesweeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WX7NZ48SDJ;
@@ -4628,7 +4628,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = TCAminesweeper/TCAminesweeper.entitlements;
+				CODE_SIGN_ENTITLEMENTS = TCAminesweeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WX7NZ48SDJ;

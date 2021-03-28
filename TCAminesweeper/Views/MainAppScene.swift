@@ -12,6 +12,7 @@ import AppView
 
 public struct MainAppScene: Scene {
     public let store: Store<MainAppState, MainAppAction>
+    @Environment(\.openURL) private var openURL
     
     public init(store: Store<MainAppState, MainAppAction>) {
         self.store = store
@@ -24,17 +25,19 @@ public struct MainAppScene: Scene {
             }
             .commands {
                 CommandMenu("Game") {
-                    Button("New Game") {
-                        viewStore.send(.newGameCommand)
-                    }
-                    .keyboardShortcut("n")
+                    Button("New Game") { viewStore.send(.newGameCommand) }
+                        .keyboardShortcut("n")
 
                     Divider()
 
-                    Button("Settings") {
-                        viewStore.send(.settingsCommand)
+                    Button("Settings") { viewStore.send(.settingsCommand) }
+                        .keyboardShortcut(",")
+                }
+                
+                CommandGroup(replacing: CommandGroupPlacement.help) {
+                    Button("Github Page") {
+                        openURL(URL(string: "https://github.com/RogyMD/TCAminesweeper")!)
                     }
-                    .keyboardShortcut(",")
                 }
             }
         }
