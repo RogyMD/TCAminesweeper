@@ -79,6 +79,13 @@
     {
       "target" : {
         "containerPath" : "container:TCAminesweeper.xcodeproj",
+        "identifier" : "A590E1F4260FD08100834E66",
+        "name" : "MainAppCoreTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:TCAminesweeper.xcodeproj",
         "identifier" : "A5497EC22603DD7000C5AD5B",
         "name" : "TCAminesweeperTests"
       }

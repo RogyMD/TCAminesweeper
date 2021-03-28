@@ -71,17 +71,18 @@ struct BombTile: View {
     }
 }
 
+#if DEBUG
+
 struct TileViews_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             OverlayTile(onTap: {}, onLongPress: {})
-            //            OverlayTile(isSelected: true)
             OverlayTile(isMarked: true)
-            //            TextTile(text: "")
             TextTile(text: "1", textColor: .blue)
             BombTile(text: "💥", isMarked: false)
-            //            BombTile(isMarked: true)
         }
         .previewLayout(.fixed(width: 30, height: 30))
     }
 }
+
+#endif

@@ -15,8 +15,8 @@ class GameCoreTests: XCTestCase {
     
     let timerScheduler = DispatchQueue.testScheduler
     let mainQueue = DispatchQueue.testScheduler
-    fileprivate let selectionFeedbackMock = UISelectionFeedbackGeneratorMock()
-    fileprivate let notificationFeedbackMock = UINotificationFeedbackGeneratorMock()
+    var selectionFeedbackCalled = false
+    var notificationFeedbackType: GameEnvironment.NotificationFeedbackType?
     
     var resultMock: MinefieldState.Result?
     
@@ -47,7 +47,7 @@ class GameCoreTests: XCTestCase {
                 $0.gameState = .new
                 $0.headerState = HeaderState(
                     leadingText: "002",
-                    centerText: "🙂",
+                    centerText: "😴",
                     trailingText: "000"
                 )
             }
@@ -60,7 +60,7 @@ class GameCoreTests: XCTestCase {
             .receive(.minefieldAction(.toogleMark(0))) {
                 $0.minefieldState.grid.content[0].isMarked = true
                 $0.minefieldState.gridInfo.flagged = [0]
-                XCTAssertTrue(self.selectionFeedbackMock.selectionChangedCalled)
+                XCTAssertTrue(self.selectionFeedbackCalled)
             },
             .receive(.gameStateChanged(.inProgress(0))) {
                 $0.gameState = .inProgress(0)
@@ -69,7 +69,9 @@ class GameCoreTests: XCTestCase {
                 $0.headerState.leadingText = "000"
             },
             .receive(.updateRemainedMines),
-            .receive(.gameStarted),
+            .receive(.gameStarted) {
+                $0.headerState.centerText = "🙂"
+            },
             .sequence(scoreIncrement()),
             .sequence(gameOver(result: .win, gameState: .over(score: 1)))
         )
@@ -97,6 +99,8 @@ class GameCoreTests: XCTestCase {
         )
     }
     
+    // MARK: - Steps
+    
     private func scoreIncrement() -> [TestStore<GameState, GameState, GameAction, GameAction, GameEnvironment>.Step] {
         [
             .do {
@@ -119,7 +123,9 @@ class GameCoreTests: XCTestCase {
             .receive(.updateRemainedMines) {
                 $0.headerState.leadingText = leadingText
             },
-            .receive(.gameStarted)
+            .receive(.gameStarted) {
+                $0.headerState.centerText = "🙂"
+            }
         ]
     }
     
@@ -138,7 +144,7 @@ class GameCoreTests: XCTestCase {
             .receive(.gameStateChanged(gameState)) {
                 $0.gameState = gameState
                 $0.headerState.centerText =  result.isWin ? "😎" : "🤯"
-                XCTAssertEqual(self.notificationFeedbackMock.notificationOccurredType, result.isWin ? .success : .error)
+                XCTAssertEqual(self.notificationFeedbackType, result.isWin ? .success : .error)
             },
             .do {
                 self.timerScheduler.advance()
@@ -160,24 +166,14 @@ class GameCoreTests: XCTestCase {
             }),
             timerScheduler: .init(timerScheduler),
             mainQueue: .init(mainQueue),
-            selectionFeedback: self.selectionFeedbackMock,
-            notificationFeedback: self.notificationFeedbackMock
+            selectionFeedback: { [weak self] in
+                self?.selectionFeedbackCalled = true
+                return .none
+            },
+            notificationFeedback: { [weak self] notificationType in
+                self?.notificationFeedbackType = notificationType
+                return.none
+            }
         )
     )
-}
-
-private final class UISelectionFeedbackGeneratorMock: UISelectionFeedbackGenerator {
-    var selectionChangedCalled = false
-    
-    override func selectionChanged() {
-        selectionChangedCalled = true
-    }
-}
-
-private final class UINotificationFeedbackGeneratorMock: UINotificationFeedbackGenerator {
-    var notificationOccurredType: UINotificationFeedbackGenerator.FeedbackType? = nil
-    
-    override func notificationOccurred(_ notificationType: UINotificationFeedbackGenerator.FeedbackType) {
-        notificationOccurredType = notificationType
-    }
 }

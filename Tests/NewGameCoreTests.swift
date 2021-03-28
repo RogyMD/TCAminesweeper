@@ -82,7 +82,9 @@ class NewGameCoreTests: XCTestCase {
             .receive(.gameAction(.updateRemainedMines)) {
                 $0.game?.headerState.leadingText = "002"
             },
-            .receive(.gameAction(.gameStarted)),
+            .receive(.gameAction(.gameStarted)) {
+                $0.game?.headerState.centerText = "🙂"
+            },
             .sequence(gameOver(result: .lost, gameState: .over(score: nil)))
         )
     }
@@ -107,7 +109,9 @@ class NewGameCoreTests: XCTestCase {
             .receive(.gameAction(.updateRemainedMines)) {
                 $0.game?.headerState.leadingText = String(format: "%03d", minefield.gridInfo.mines.count)
             },
-            .receive(.gameAction(.gameStarted))
+            .receive(.gameAction(.gameStarted)) {
+                $0.game?.headerState.centerText = "🙂"
+            }
         ]
     }
     
@@ -154,7 +158,9 @@ class NewGameCoreTests: XCTestCase {
                     return Effect(value: result)
                 }),
                 timerScheduler: .init(self.timerScheduler),
-                mainQueue: .init(self.mainQueue)
+                mainQueue: .init(self.mainQueue),
+                selectionFeedback: { .none },
+                notificationFeedback: {_ in .none }
             ),
             settingsService: .mock(
                 userSettings: { Effect(value: UserSettings(otherThanCustom: .easy)) }

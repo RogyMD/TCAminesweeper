@@ -6,7 +6,7 @@ This project is a copy of the Windows game Minesweeper.
 
 ## About
 
-Minesweeper is an iOS application built entirely in Swift. The logic is build in the [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) and the UI is built in SwiftUI.
+Minesweeper is an iOS & Mac Catalyst application built entirely in Swift. The logic is build in the [Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture) and the UI is built in SwiftUI.
 
 The project shows following use cases:
 
@@ -19,7 +19,11 @@ The project shows following use cases:
 
 | Game | High Scores | Settings |
 |---|---|---|
-| <img src="Assets/README/game.png" width="300">  |  <img src="Assets/README/high_scores.png" width="300"> |<img src="Assets/README/settings.png" width="300"> |
+| <img src="Assets/README/game.png" width="300"> | <img src="Assets/README/high_scores.png" width="300"> | <img src="Assets/README/settings.png" width="300"> |
+
+| Mac Catalyst |
+|---|
+|![macOS](Assets/README/mac_os.png)|
 
 ## License
 

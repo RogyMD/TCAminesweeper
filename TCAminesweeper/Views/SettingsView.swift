@@ -48,7 +48,8 @@ public struct SettingsView: View {
             .navigationTitle("Settings")
             .toolbar {
                 ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { viewStore.send(.cancelButtonTapped) }
+                    Button("Close") { viewStore.send(.cancelButtonTapped) }
+                        .keyboardShortcut(.cancelAction)
                 }
             }
         }
