@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -139,6 +139,8 @@
 		A5E2820525FEBE78008F55DB /* LiveAppEnvirontment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CCBE6E25FD6E73001E57FA /* LiveAppEnvirontment.swift */; };
 		A5E2822425FEBEA3008F55DB /* LiveHighScoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC20B25FE529B001E57FA /* LiveHighScoreService.framework */; };
 		A5E2822525FEBEA3008F55DB /* LiveSettingsService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5CCC2A725FE52BA001E57FA /* LiveSettingsService.framework */; };
+		C438B1582B79621200B16926 /* MainAppCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A590E1ED260FD08000834E66 /* MainAppCore.framework */; };
+		C438B1592B79621200B16926 /* MainAppCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A590E1ED260FD08000834E66 /* MainAppCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -569,6 +571,13 @@
 			remoteGlobalIDString = A5E27E7825FEAEE0008F55DB;
 			remoteInfo = SettingsService;
 		};
+		C438B15A2B79621200B16926 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5CEBC6E25EFF4D30013EA06 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A590E1EC260FD08000834E66;
+			remoteInfo = MainAppCore;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -615,6 +624,7 @@
 				A5CCBEB825FE5132001E57FA /* NewGameCore.framework in Embed Frameworks */,
 				A5CCBEE925FE514A001E57FA /* AppCore.framework in Embed Frameworks */,
 				A5CCC19B25FE526D001E57FA /* TCAminesweeperCommon.framework in Embed Frameworks */,
+				C438B1592B79621200B16926 /* MainAppCore.framework in Embed Frameworks */,
 				A5CCC2AF25FE52BA001E57FA /* LiveSettingsService.framework in Embed Frameworks */,
 				A5CCC00525FE51B2001E57FA /* HighScoresView.framework in Embed Frameworks */,
 				A5CCC0A725FE520E001E57FA /* MinefieldCore.framework in Embed Frameworks */,
@@ -984,6 +994,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C438B1582B79621200B16926 /* MainAppCore.framework in Frameworks */,
 				A590E2CF260FD19800834E66 /* MainAppScene.framework in Frameworks */,
 				A5E2822425FEBEA3008F55DB /* LiveHighScoreService.framework in Frameworks */,
 				A5E2822525FEBEA3008F55DB /* LiveSettingsService.framework in Frameworks */,
@@ -1958,6 +1969,7 @@
 				A5CCC2AD25FE52BA001E57FA /* PBXTargetDependency */,
 				A5E27E7F25FEAEE0008F55DB /* PBXTargetDependency */,
 				A590E2CE260FD19800834E66 /* PBXTargetDependency */,
+				C438B15B2B79621200B16926 /* PBXTargetDependency */,
 			);
 			name = TCAminesweeper;
 			packageProductDependencies = (
@@ -2986,6 +2998,11 @@
 			isa = PBXTargetDependency;
 			target = A5E27E7825FEAEE0008F55DB /* SettingsService */;
 			targetProxy = A5E27E7E25FEAEE0008F55DB /* PBXContainerItemProxy */;
+		};
+		C438B15B2B79621200B16926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A590E1EC260FD08000834E66 /* MainAppCore */;
+			targetProxy = C438B15A2B79621200B16926 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -4607,7 +4624,7 @@
 				CODE_SIGN_ENTITLEMENTS = TCAminesweeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WX7NZ48SDJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
@@ -4631,7 +4648,7 @@
 				CODE_SIGN_ENTITLEMENTS = TCAminesweeper.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WX7NZ48SDJ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
