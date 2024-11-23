@@ -1,4 +1,5 @@
 {
+  "originHash" : "72272e19d5563cbd38d4afad077e74bbb6c0ffecec5c16fcb00fbe6aff094ed8",
   "pins" : [
     {
       "identity" : "combine-schedulers",
@@ -19,12 +20,21 @@
       }
     },
     {
+      "identity" : "swift-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-collections",
+      "state" : {
+        "revision" : "671108c96644956dddcd89dd59c203dcdb36cec7",
+        "version" : "1.1.4"
+      }
+    },
+    {
       "identity" : "swift-composable-architecture",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/pointfreeco/swift-composable-architecture.git",
       "state" : {
-        "revision" : "86d6e3551437a88ecd73a789753fd2151761b17d",
-        "version" : "0.15.0"
+        "revision" : "a518935116b2bada7234f47073159b433d432af1",
+        "version" : "0.39.1"
       }
     },
     {
@@ -34,6 +44,24 @@
       "state" : {
         "revision" : "479750bd98fac2e813fffcf2af0728b5b0085795",
         "version" : "0.1.1"
+      }
+    },
+    {
+      "identity" : "swift-custom-dump",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-custom-dump",
+      "state" : {
+        "revision" : "0a5bff05fe01dcd513932ed338a4efad8268b803",
+        "version" : "0.11.2"
+      }
+    },
+    {
+      "identity" : "swift-identified-collections",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/pointfreeco/swift-identified-collections",
+      "state" : {
+        "revision" : "d01446a78fb768adc9a78cbb6df07767c8ccfc29",
+        "version" : "0.8.0"
       }
     },
     {
@@ -55,5 +83,5 @@
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
