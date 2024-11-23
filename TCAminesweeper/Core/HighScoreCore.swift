@@ -19,7 +19,7 @@ public struct HighScoreState: Equatable {
         scores: [UserHighScore] = []
     ) {
         self.difficulty = difficulty
-        self.scores = IdentifiedArray(scores.enumerated().map { Identified($1, id: $0) })
+        self.scores = IdentifiedArray(uniqueElements: scores.enumerated().map { Identified($1, id: $0) })
     }
 }
 
@@ -46,7 +46,7 @@ public let highScoreReducer = Reducer<HighScoreState, HighScoreAction, HighScore
         return Effect(value: .loadScores)
         
     case let .updateScores(scores):
-        state.scores = IdentifiedArray(scores.sorted(by: { $0.score < $1.score }).enumerated().map { Identified($1, id: $0) })
+        state.scores = IdentifiedArray(uniqueElements: scores.sorted(by: { $0.score < $1.score }).enumerated().map { Identified($1, id: $0) })
         return .none
     
     case .loadScores:

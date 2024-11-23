@@ -21,7 +21,7 @@ public struct Grid<Content>: Equatable where Content: Identifiable & Equatable {
     ) {
         self.rows = rows
         self.columns = columns
-        self.content = IdentifiedArray(content)
+      self.content = IdentifiedArray(uniqueElements: content)
     }
 }
 

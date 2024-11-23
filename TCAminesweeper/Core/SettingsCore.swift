@@ -11,8 +11,8 @@ import SettingsService
 import TCAminesweeperCommon
 
 public struct SettingsState: Equatable {
-    public var userSettings: UserSettings
-    public var difficulties: [Difficulty] = [.easy, .normal, .hard, .custom]
+  @BindableState public var userSettings: UserSettings
+    public let difficulties: [Difficulty] = [.easy, .normal, .hard, .custom]
     public var difficulty: Difficulty {
         get { userSettings.difficulty }
         set { userSettings.difficulty = newValue }
@@ -43,34 +43,33 @@ public struct SettingsEnvironment {
 }
 
 public let settingsReducer = Reducer<SettingsState, SettingsAction, SettingsEnvironment> { state, action, environment in
-    switch action {
-        
-    case .binding(\.difficulty):
-        if let attributes = state.difficulty.minefieldAttributes {
-            state.minefieldAttributes = attributes
-        }
-        return Effect(value: .saveSettings)
-        
-    case .saveSettings:
-        return environment.settingsService.saveUserSettings(state.userSettings)
-            .fireAndForget()
-            .eraseToEffect()
-    
-    case .binding(\.minefieldAttributes.rows),
-         .binding(\.minefieldAttributes.columns),
-         .binding(\.minefieldAttributes.mines):
-        
-        state.minefieldAttributes.normalize()
-        return Effect(value: .saveSettings)
-        
-    case .binding(_):
-        return Effect(value: .saveSettings)
-        
-    case .cancelButtonTapped, .newGameButtonTapped:
-        return .none
-    }
+  switch action {
+      
+  case .binding(\.$userSettings.difficulty):
+      if let attributes = state.difficulty.minefieldAttributes {
+          state.minefieldAttributes = attributes
+      }
+      return Effect(value: .saveSettings)
+      
+  case .saveSettings:
+      return environment.settingsService.saveUserSettings(state.userSettings)
+          .fireAndForget()
+          .eraseToEffect()
+  
+  case .binding(\.$userSettings.minefieldAttributes.rows),
+      .binding(\.$userSettings.minefieldAttributes.columns),
+      .binding(\.$userSettings.minefieldAttributes.mines):
+      
+      state.minefieldAttributes.normalize()
+      return Effect(value: .saveSettings)
+      
+  case .binding(_):
+      return Effect(value: .saveSettings)
+      
+  case .cancelButtonTapped, .newGameButtonTapped:
+      return .none
+  }
 }
-.binding(action: /SettingsAction.binding)
 
 #if DEBUG
 

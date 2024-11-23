@@ -9,7 +9,7 @@ import Foundation
 import TileCore
 import TCAminesweeperCommon
 
-extension Grid: CustomStringConvertible where Content == TileState {
+extension Grid: @retroactive CustomStringConvertible where Content == TileState {
     public var description: String {
         "\n" + String(repeating: "_", count: columns + 1) + "\n" +
         content.enumerated().reduce("") { result, arg1 in
