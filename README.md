@@ -1,6 +1,5 @@
 ![App Icon](Assets/README/app_icon.png)
-[<img src="https://i0.wp.com/rogy.app/wp-content/uploads/2024/12/downlaod-from-app-store.png" width="150">]([https://rogy.app/minesweeper](https://apps.apple.com/app/minesweeper-v1-0/id6738613938)
-
+[<img src="https://i0.wp.com/rogy.app/wp-content/uploads/2024/12/downlaod-from-app-store.png" width="150">](https://apps.apple.com/app/minesweeper-v1-0/id6738613938)
 
 ## Minesweeper
 
